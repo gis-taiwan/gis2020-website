@@ -1,0 +1,311 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+#registertab body {
+	font-family: sans-serif,"Apple LiGothic Medium","Microsoft JhengHei";
+	background: #f6f9fa;
+}
+#registertab h1 {
+	color: #ccc;
+	text-align: center;
+}
+#registertab a {
+  color: rgba(89,182,171,1);
+  text-decoration: none;
+  outline: none;
+}
+
+.price_tag {
+ color: rgba(255,0,0,1);
+}
+
+/*Fun begins*/
+.tab_container {
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 70px;
+	position: relative;
+}
+
+input, section {
+  clear: both;
+  padding-top: 10px;
+  display: none;
+}
+
+label {
+  font-weight: 700;
+  font-size: 18px;
+  display: block;
+  float: left;
+  width: 25%;
+  padding: 1.5em;
+  color: #757575;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  background: #f0f0f0;
+}
+
+.mycontent {
+  display: block;
+  padding: 20px;
+  background: #fff;
+  color: #585858;
+  border-bottom: 2px solid #f0f0f0;
+  overflow-x: hidden;
+}
+.mylabel {
+  background: #fff;
+  box-shadow: inset 0 3px rgba(89,182,171,1);/*0CE;*/
+}
+
+.myfas {
+  color: rgba(89,182,171,1)/*#0CE*/;
+}
+
+
+
+/*
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5 {
+  display: block;
+  padding: 20px;
+  background: #fff;
+  color: #999;
+  border-bottom: 2px solid #f0f0f0;
+}
+*/
+
+.tab_container .tab-content p,
+.tab_container .tab-content h3 {
+  -webkit-animation: fadeInScale 0.7s ease-in-out;
+  -moz-animation: fadeInScale 0.7s ease-in-out;
+  animation: fadeInScale 0.7s ease-in-out;
+}
+.tab_container .tab-content h3  {
+  text-align: center;
+}
+/*
+.tab_container [id^="tab"]:checked + label {
+  background: #fff;
+  box-shadow: inset 0 3px #0CE;
+}
+
+.tab_container [id^="tab"]:checked + label .fas {
+  color: #0CE;
+}
+*/
+
+label .fas {
+  font-size: 1.3em;
+  margin: 0 0.4em 0 0;
+}
+
+/*Media query*/
+@media only screen and (max-width: 900px) {
+  label span {
+    display: none;
+  }
+  
+  .tab_container {
+    width: 98%;
+  }
+}
+
+/*Content Animation*/
+@keyframes fadeInScale {
+  0% {
+  	transform: scale(0.9);
+  	opacity: 0;
+  }
+  
+  100% {
+  	transform: scale(1);
+  	opacity: 1;
+  }
+}
+
+.no_wrap {
+  text-align:center;
+  color: #0ce;
+}
+.link {
+  text-align:center;
+}
+
+/* registration guide */
+
+.process {
+  width: 100%;
+  margin: 0px 0px;
+  cursor: default;
+}
+
+.process-items {
+  margin: 0 0 10px;
+  padding: 0;
+  list-style-type: none;
+  color: #585858;
+  font-size: 18px;
+  text-align: center;
+}
+.process-items div {
+  vertical-align: bottom;
+  padding: 0 0.5em;
+  -webkit-transform: scale(0.8) translateY(30px);
+          transform: scale(0.8) translateY(30px);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.process-items div.active {
+  -webkit-transform: scale(1) translateY(0);
+          transform: scale(1) translateY(0);
+}
+.process-items em {
+  display: block;
+  margin-top: 0.5em;
+}
+.process-items p {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/*mobile slick text slider*/
+.testimonial-area {
+    display: block;
+    background: rgba(0, 0, 0, 0);
+    width:100%;
+    padding: 20px 0 0px;
+    position: relative;
+}
+
+.testimonial-image-slider {margin-top: 5px}
+.slick-list {margin: 0 5px}
+
+.mcontent{
+  height:100%;
+  transform: scale(0.7);
+}
+.mcontent p{
+  font-weight: bold;
+  }
+.mcontent.slick-current{
+    z-index:1;
+  transform: scale(1) translateY(0px);
+  -webkit-transition: all .5s; /* Safari */
+  transition: all .5s;
+}
+
+.slick-prev, .slick-next {
+    background: rgba(0,0,0,0) none repeat scroll 0 0;
+    border: medium none;
+    color: blue;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    height: 25px;
+    outline: medium none;
+    padding: 0;
+    position: absolute;
+    top: 0%;
+    width: 16px;
+}
+.slick-prev {
+    left: 0px;
+    z-index:1;
+}
+
+.slick-next {right: 0px}
+.slick-prev:before{
+    height: 25px;
+    width: 16px;
+    left: -30px;
+    top: 40px;
+    position: absolute;
+    color:#585858;
+    font-weight : bold;
+    content: "<";
+    font-family: "Material-Design-Iconic-Font","Apple LiGothic Medium","Microsoft JhengHei";
+    font-size: 2.5rem !important;
+    opacity: 1;
+    
+}
+.slick-next:before {
+    height: 25px;
+    width: 16px;
+    left: 15px;
+    top: 40px;
+    position: absolute;
+    color:#585858;
+    font-weight : bold;
+    content: ">";
+    font-family: "Material-Design-Iconic-Font","Apple LiGothic Medium","Microsoft JhengHei";
+    font-size: 2.5rem !important;
+    opacity: 1;
+    
+}
+
+.slick-next:before {
+    opacity: 1;
+    right: 0; 
+}
+.slick-slider {z-index: 9;}
+
+@media (max-width: 980px) {
+  .slider-row {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 981px) {
+  .slider-row {
+    max-width: 1160px;
+  }
+}
+a.btn.signup{
+    width:30%;
+    min-width:110px;
+    color: white !important;
+}
+.formlink{
+    width:100%;
+    height:100%;
+    color: white !important;
+    /*min-width:190px;*/
+
+}
+#content5 img{
+    width: 100%
+}
+.spot > p{
+    margin-top: 30px;
+    font-weight: bold;
+
+}
+#content5 h4{
+    margin-top:30px;
+}
+

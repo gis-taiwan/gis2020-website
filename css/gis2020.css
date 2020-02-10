@@ -1,0 +1,84 @@
+/* academic structure*/
+.structure_grid{
+}
+.structure .structure_grid > div{
+    width:100%;
+    border-radius:10px;
+    /*min-height: 70px;*/
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+}
+
+.structure p{
+    font-weight: 600;
+    margin: 0 0 0 0;
+}
+.layer1{
+	color: #f1f1f1;
+    background-color: rgb(218,144,55);
+}
+.layer2{
+	color: #f1f1f1;
+    background-color: rgb(40,64,107);
+}
+.layer3{
+	color: #f1f1f1;
+    background-color: rgb(89,134,184);
+}
+#canvas{
+    position:absolute;
+}
+.viewmore{
+    white-space: nowrap;
+  /*display: inline-block;*/
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 1em 1.3em;
+  border-radius: 50em;
+  border: 2px solid ;
+}
+.layer1_outside{
+    background-color: rgb(247,244,239);
+}
+.layer2_outside{
+    background-color: rgb(242,244,247);
+}
+.structure a{
+    display: block;
+    /*margin: 2rem 0rem 1rem 0rem;*/
+}
+.layer2 a{
+    color: #f1f1f1;
+}
+.layer3 a{
+    color: #f1f1f1;
+}
+.view{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.modal img{
+    margin-bottom:2rem;
+}
+/* annual theme pic*/
+#pic{
+    width: 40%;
+    float: right;
+}
+@media (max-width: 500px) {
+    #pic{
+        width: 50%;
+    }
+}
+@media (max-width: 400px) {
+    #pic{
+        width: 100%;
+        margin: 0 0 1rem 0 !important;
+    }
+}

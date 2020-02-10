@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html class="whole">
+    <head>
+        <meta charset="utf-8">
+        <title data-i18n="register.title">Register | GIS Taiwan</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/favicon/site.webmanifest">
+        <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#2e3a82">
+        <link rel="shortcut icon" href="/favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#2e3a82">
+        <meta name="msapplication-TileImage" content="/favicon/mstile-144x144.png">
+        <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#2e3a82">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+        <!-- Bootstrap CSS File -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Libraries CSS Files -->
+        <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Main Stylesheet File -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/register.css" rel="stylesheet">
+
+        <!-- =======================================================
+            Theme Name: BizPage
+            Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+            Author: BootstrapMade.com
+            License: https://bootstrapmade.com/license/
+            ======================================================= -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129743888-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-129743888-2');
+
+            function show(index,closemenu){
+                //console.log('in html');
+                var newtabid = "#tab" + index;
+                var oldtabid = "#tab" + showindex;
+                //console.log(oldtabid);
+                //console.log(newtabid);
+                //console.log(oldtabid + " + label");
+                $(oldtabid + " + label").removeClass("mylabel");
+                $(oldtabid + " + label .fas").removeClass("myfas");
+                $("#content" + showindex).removeClass("mycontent");
+                $(newtabid + "+ label").addClass("mylabel");
+                $(newtabid + "+ label .fas").addClass("myfas");
+                $("#content"+index).addClass("mycontent");
+                showindex = index;
+                // nav bar
+                $('.menu-active.menu-item-active').removeClass('menu-active menu-item-active');
+                $('#register-list li:nth-child(' + index + ')').addClass('menu-active menu-item-active');
+
+                if(closemenu && $('body').hasClass('mobile-nav-active')){
+                    $("#mobile-nav-toggle").trigger( "click" );
+                }
+                document.getElementById('registertab').scrollIntoView();
+            }
+        </script>
+    </head>
+<style type="text/css">
+@media only screen and (min-width: 900px) {
+.tab-content{
+    width: 70vw;
+}
+@media only screen and (min-width: 1100px) {
+.tab-content{
+    width: 55vw;
+}
+
+</style>
+    <body>
+        <!--==========================
+            Header
+            ============================-->
+        <header id="header" class="myheader">
+            <div class="container-fluid">
+                <div id="logo" class="pull-left">
+                    <a href="./index.html" class="navbar-brand"><img src="img/gislogo.png" width=180 alt="gis-taiwan logo" title="gis-taiwan logo"/></a>
+                </div>
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu navbar-loc">
+                        <li><a href="./index.html" data-i18n="nav.home">Home</a></li>
+                        <li class="menu-has-children"><a href="./about-us.html" data-i18n="nav.about">About</a>
+                            <ul>
+                                <li><a href="./about-us.html" data-i18n="nav.about-us">About Us</a></li>
+                                <li><a href="./organizing-committee.html" data-i18n="nav.organizing-committee">Organizing Committee</a></li>
+                                <li><a href="./advisory-panel.html" data-i18n="nav.advisory-panel">Advisory Panel</a></li>
+                                <li><a href="./partnership.html" data-i18n="nav.partnership">Partnership</a></li>
+                                <li><a href="./past-conference.html" data-i18n="nav.past-conference">Past Conferences</a></li>
+                            </ul>
+                        </li> 
+                        <li class="menu-has-children"><a href="./gis2020.html" data-i18n="nav.gis2020">GIS 2020</a>
+                            <ul>
+                                <li><a href="./gis2020.html#annual_themes" data-i18n="nav.annual-theme">Annual Theme</a></li>
+                                <li><a href="./agenda.html" data-i18n="nav.agenda">Agenda</a></li>
+                                <li><a href="./speaker.html" data-i18n="nav.speaker">Speaker</a></li>
+                                <li><a href="./leaders-dialogue.html" data-i18n="nav.l_dialogue">Leaders Dialogue</a></li>
+                                <li><a href="./gis2020.html#academic_topics" data-i18n="nav.academic-topic">Academic Topic</a></li>
+                                <li><a href="./gis2020.html#action_project" data-i18n="nav.action-poject">Action Project</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-has-children menu-active"><a href="#" data-i18n="nav.register">Register</a>
+                            <ul>
+                                <li><a  href="javascript:show('1',true)" data-i18n="nav.registration">Registration</a></li>
+                                <li><a  href="javascript:show('3',true)" data-i18n="nav.basis-of-selection">Basis of Selection</a></li>
+								<li><a  href="javascript:show('4',true)" data-i18n="nav.scholarship">scholarship</a></li>
+                                <li><a  href="javascript:show('5',true)" data-i18n="nav.financial-aid">Financial Aid</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./sponsorship.html" data-i18n="nav.sponsorship">Sponsorship</a></li>
+                        <li><a href="./faq.html" data-i18n="nav.faq">FAQ</a></li>
+                        <li><a href="./index.html#contact" data-i18n="nav.contact">Contact</a></li>
+                        <li><a href="javascript:void(0)" class="lang-toggle" data-i18n="nav.toggle-buttom">中文</a></li>
+                    </ul>
+                </nav><!-- #nav-menu-container -->
+            </div>
+        </header><!-- #header -->
+
+
+        <main id="main" >
+            <div class="topimage bg-cover" style="background-image: url(img/intro-carousel/1.jpg)"></div>
+            <div class="container" id="registertab">
+                <div class="tab_container">
+                    <div class="row">
+                        <input id="tab1" type="radio" name="tabs" checked>
+                        <label for="tab1"><i class="fas fa-pen-nib"></i><br><span data-i18n="register.tab.1">Registration</span><br></label>
+						<!-- 
+                        <input id="tab2" type="radio" name="tabs">
+                        <label for="tab2"><i class="fas fa-school"></i><br><span data-i18n="register.tab.2">High School Program</span></label>
+						-->
+                        <input id="tab3" type="radio" name="tabs">
+                        <label for="tab3"><i class="fas fa-user-alt"></i><br><span data-i18n="register.tab.3">Basis of Selection</span></label>
+
+                        <input id="tab4" type="radio" name="tabs">
+                        <label for="tab4"><i class="fas fa-dollar-sign"></i><br><span data-i18n="register.tab.4">scholarship</span><br></label>
+                        <input id="tab5" type="radio" name="tabs">
+                        <label for="tab5"><i class="fas fa-hands-helping"></i><br><span data-i18n="register.tab.5">Financial Aid<br></span></label>
+						<section id="content1" class="tab-content mx-auto">
+
+                            <h3 data-i18n="register.content1.1">Registration</h3>
+                            <h4 data-i18n="register.content1.2">Registration Date</h4>
+                            <h5 data-i18n="register.content1.3">Early Bird:</h5>
+                            <p data-i18n="register.content1.4">10th, February, 2020 to 25th, March, 2020.<p>
+                            <h5 data-i18n="register.content1.5">Regular:</h5>
+                            <p data-i18n="register.content1.6">1st, April, 2020 to 13th, May, 2020</p>
+							<!--
+                            <h5 data-i18n="register.content1.5_1">Late Registration:</h5>
+                            <p data-i18n="register.content1.6_1">17st, May, 2020 to 31st, May, 2020</p>
+							-->
+
+
+                            <h4 data-i18n="register.content1.7">Conference Fee</h4>
+                            <!--<h5 data-i18n="register.content1.8">Early Bird:</h5> -->
+                            <p class="price_tag"><span><s data-i18n="register.content1.9">5000 NTD</s></span><span data-i18n="register.content1.11">4000 NTD</span></p>
+                            <!--
+							<h5 data-i18n="register.content1.10">Regular:</h5>
+                            <p data-i18n="register.content1.11">4600 NTD<p> 
+							-->
+							
+							
+                            <h4 data-i18n="register.content1.8">Accommodation Fee</h4>
+                            <p data-i18n="register.content1.12">2500NTD</p> 
+                            <!--<p data-i18n="register.content1.13">*USD and NTD Exchange Rate (according to Bloomberg Market) : 1 USD = 30.81 NTD</p>-->
+
+                            <h3 data-i18n="register.content1.14">Registration Plan</h3>
+							<h4 data-i18n="register.content1.15">Taiwanese College Students</h4>
+							<p data-i18n="register.content1.17">Taiwanese citizens that are High School Graduates, or college freshmen or above. (Dual nationality counts as Taiwanese)</p>
+                            <h4 data-i18n="register.content1.22">Foreigners</h4> 
+							<p data-i18n="register.content1.18">Anyone who isn’t a Taiwanese citizen, including those from China, Hong Kong, and Macau.</p>
+							<!--
+                            <h4 data-i18n="register.content1.15">Group</h4> 
+                            <p data-i18n="register.content1.16">For Local Application*,</p> 
+                            <p data-i18n="register.content1.17">a group of 3 or more accepted applicants is qualified for 4000 NTD discount.</p>
+
+                            <p data-i18n="register.content1.18">For International Application*,</p> 
+                            <p data-i18n="register.content1.19">a group of 3 or more accepted applicants is qualified for 4000 NTD discount.</p>
+
+                            <p data-i18n="register.content1.20">Group discount is only valid after all applicants in the group are accepted as participants of GIS Taiwan 2020.</p>
+
+                            <p data-i18n="register.content1.21">*Local application and International Application</p> 
+
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" data-i18n="register.content1.table.1-1">Local Application</th>
+                                        <td data-i18n="register.content1.table.1-2">You are a Taiwanese student studying in Taiwan</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" data-i18n="register.content1.table.2-1">International Application</th>
+                                        <td><p data-i18n="register.content1.table.2-2">1. You are a Taiwanese student studying abroad</p> 
+                                            <p data-i18n="register.content1.table.2-3">2. You are an international student studying in Taiwan</p> 
+                                            <p data-i18n="register.content1.table.2-4">3. You are a non-Taiwanese student studying abroad</p>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table> 
+
+                            <h4 data-i18n="register.content1.22">Partnership</h4>
+
+                            <p><span  data-i18n="register.content1.23">Our partnership this year are: </span><a href="./partnership.html" target="_blank"  data-i18n="register.content1.23_1">Partnership</a><p>
+
+                            <p data-i18n="register.content1.24">The standard partnership fee is 3000 NTD, and essay answers from the members of our partners are not required. Please upload the Partnership Invitation to the Essay Answers Upload section.</p>
+
+                            <p><span data-i18n="register.content1.25">We welcome all organizations to establish partnership with GIS Taiwan 2020. Please contact us at </span><a href="mailto:delegateaffair@gis-taiwan.ntu.edu.tw">delegateaffair@gis-taiwan.ntu.edu.tw</a><span data-i18n="register.content1.26"> for further information.</span></p>
+
+                            <h4 data-i18n="register.content1.27">Student Ambassador Referral</h4>
+
+                            <p><span  data-i18n="register.content1.32">Our student ambassador this year are: </span><a href="./student_ambassadors.html" target="_blank"  data-i18n="register.content1.32_1">Student Ambassador</a><p>
+
+                            <p data-i18n="register.content1.28">You may be accepted as a delegate in 2020 Global Initiative Symposium with a referral of our student ambassador. You do not need to compose the essay question answers.</p> 
+
+                            <p data-i18n="register.content1.29">To apply, you need to receive a letter of recommendation from a student ambassador.</p>
+
+                            <p data-i18n="register.content1.30">Please attach the letter of recommendation to the Essay Questions Upload section in the Application Form.</p> 
+							-->
+							<div class="mx-auto text-center my-5">
+                                <a  href="javascript:show('3',false)" class="btn btn-lg btn-primary signup" data-i18n="register.content1.31">Sign Up</a>
+                            </div>
+                        </section>
+						<!--
+                        <section id="content2" class="tab-content mx-auto">
+                            <h3 data-i18n="register.content2.1">High School Program</h3>
+                            <p data-i18n="register.content2.2">GIS Taiwan provides an exclusive High School Program in order to increase global awareness among high school students. With a training program before the conference, we anticipate to help high school students integrate with university-level discussions. This year, we will select 60 high school delegates through application assessments and interviews in English. </p>
+
+                            <h4 data-i18n="register.content2.3">Eligibility</h4>
+                            <p data-i18n="register.content2.4">Students who have not yet graduated high school and those who have graduated in 2020.<p>
+
+                            <h4 data-i18n="register.content2.5">Registration Time</h4>
+                            <p data-i18n="register.content2.6">11st, February, 2020 to 12th, May, 2020.<p>
+
+                            <h4 data-i18n="register.content2.7">Conference Fee</h4>
+                            <p data-i18n="register.content2.8">The fee includes all food and drink during the the conference (7th, July, 2020 to 12th, July, 2020), accommodation (7th, July, 2020 to 12th, July, 2020) (5 days) and the training program.</p>
+                            <p data-i18n="register.content2.9">High School Program:</p>
+                            <p data-i18n="register.content2.10">7900 TWD</p>
+                            <div class="mx-auto text-center my-5">
+                                <a  href="javascript:show('3',false)" class="btn btn-lg btn-primary signup" data-i18n="register.content2.11">Sign Up</a>
+                            </div>
+                        </section>
+						-->
+                        <section id="content3" class="tab-content mx-auto ">
+                            <h3 data-i18n="register.content3.1">Basis of Selection</h3>
+                            <h4 data-i18n="register.content3.2">Registration guide</h4>
+                            <div class="container-fluid process mb-5 setwidth">
+                                <div class="row process-items justify-content-center d-none d-md-flex">
+                                    <div class="active col-2 s1" id="0"><p data-i18n="register.content3.step.1">Step 1</p>
+                                        <em data-i18n="register.content3.step.1_des">Complete the essay questions.</em>
+                                    </div>
+                                    <div class="col-2 s2" id="1"><p data-i18n="register.content3.step.2">Step 2</p>
+                                        <em data-i18n="register.content3.step.2_des">Complete the registration form as below.</em>
+                                    </div>
+                                    <div class="col-3 s3" id="2"><p data-i18n="register.content3.step.3">Step 3</p>
+                                        <em data-i18n="register.content3.step.3_des">We will review your answers to the essay questions. Applications will be reviewed as soon as submitted.</em>
+                                    </div>
+                                    <div class="col-3 s4" id="3"><p data-i18n="register.content3.step.4">Step 4</p>
+                                        <em data-i18n="register.content3.step.4_des">Once you pass the written stage, we will notify you of your interview time.</em>
+                                    </div>
+                                    <div class="col-2 s5" id="4"><p data-i18n="register.content3.step.5">Step 5</p>
+                                        <em data-i18n="register.content3.step.5_des">Once you pass the interview stage, we will notify you of your admission to the conference.</em>
+                                    </div>
+                                </div>
+                                <div class="row d-none d-md-flex">
+                                    <div class="col-12">
+                                        <canvas id="canvas" height="55"></canvas><!--style="width:100%"-->
+                                    </div>
+                                </div>
+
+                                <div class="row d-block d-md-none mx-auto" id="mobile-step">
+                                    <div class="col-10 mx-auto">
+                                        <div class="testimonial-area">
+                                            <div class="testimonial-image-slider slider-nav text-center">
+                                                <div class="mcontent">
+                                                    <p data-i18n="register.content3.step.1">Step 1</p>
+                                                    <em data-i18n="register.content3.step.1_des">Complete the essay questions</em>
+                                                </div>
+                                                <div class="mcontent">
+                                                    <p data-i18n="register.content3.step.2">Step 2</p>
+                                                    <em data-i18n="register.content3.step.2_des">Complete the registration form as below</em>
+                                                </div>
+                                                <div class="mcontent">
+                                                    <p data-i18n="register.content3.step.3">Step 3</p>
+                                                    <em data-i18n="register.content3.step.3_des">We will review your answers to the essay questions.</em>
+                                                </div>
+                                                <div class="mcontent">
+                                                    <p data-i18n="register.content3.step.4">Step 4</p>
+                                                    <em data-i18n="register.content3.step.4_des">If you are qualified, we will send you a confirmation letter within 1 week.</em>
+                                                </div>
+                                                <div class="mcontent">
+                                                    <p data-i18n="register.content3.step.5">Step 5</p>
+                                                    <em data-i18n="register.content3.step.5_des">Registration completed</em>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 data-i18n="register.content3.3">Essay question</h4>
+                            <p data-i18n="register.content3.4">Consists of basic information survey and two English essay questions.</p>
+                            <div class="container">
+                                <div class="row">
+									<!--
+                                    <div class="col-12 col-md-9">
+                                        <table class="table table-hover">
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" data-i18n="register.content3.table.1-1">Form</th>
+                                                    <td>
+                                                        <p data-i18n="register.content3.table.1-2">500 words max</p>
+                                                        <p data-i18n="register.content3.table.1-3">PDF format with the file name “GIS Taiwan 2020 + English name”</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" data-i18n="register.content3.table.2-1">Language</th>
+                                                    <td><p data-i18n="register.content3.table.2-2">English</p></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" data-i18n="register.content3.table.2-3">Deadline</th>
+                                                    <td><p data-i18n="register.content3.table.2-4">12th, May, 2020</p></td>
+                                                </tr>
+                                            </tbody>
+                                        </table> 
+                                    </div>
+									-->
+                                    <div class="col-12 col-md-3 mx-auto d-flex align-items-center">
+                                        <div class="text-center mx-auto">
+                                            <a href="https://drive.google.com/file/d/1MU4tbIf3S_UOlbcSsCMWAPsNJ891-fbO/view" target="_blank">
+                                                <img src="./img/essayquestion-icon.png" alt="essay question" height="60" width="60">
+                                                <p data-i18n="register.content3.5">GIS Taiwan 2020 Essay Questions</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							<!--
+                            <p data-i18n="register.content3.6">If you are a high school applicant, please note that an interview in English will be arranged if you pass the paper reviewing section.</p>
+                            -->
+                            <h4 data-i18n="register.content3.6">Interview Stage</h4>
+                            <p data-i18n="register.content3.10">Consists of a 10-minute English interview. Applicants can choose between online or in-person interviews.</p>
+							<p><span data-i18n="register.content3.7">If you have any question regarding the registration process, please contact </span><a href="mailto:delegateaffair@gis-taiwan.ntu.edu.tw">delegateaffair@gis-taiwan.ntu.edu.tw</a></p>
+                            <h4 data-i18n="register.content3.8">Registration form</h4>
+                            <div class="container my-5">
+                                <div class="row justify-content-around">
+                                    <div class="col-md-4 col-8 mb-4 mb-md-0">
+                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdpsULZiEFnJ8RgU1dqMvFqF47AK02bRAdojfzDygz2VDBj-g/viewform?usp=sf_link" target="_blank" class="btn btn-lg btn-primary formlink" data-i18n="register.content3.9">Taiwanese Students</a>
+                                    </div>
+									<!--
+                                    <div class="col-md-4 col-8 mb-4 mb-md-0 mt-1 mt-md-0">
+                                        <a href="https://www.wjx.top/m/34204032.aspx" target="_blank" class="btn btn-lg btn-primary formlink" data-i18n="register.content3.10">Registration Form for China Delegates</a>
+                                    </div>
+									-->
+                                    <div class="col-md-4 col-8 mt-1 mt-md-0">
+                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScMqz9XFhi_HQpZgPMJpE7a_SUxcIKnJBF14c1OdtuRCYPA_g/viewform?usp=sf_link" target="_blank" class="btn btn-lg btn-primary formlink" data-i18n="register.content3.11">Foreigners</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="content4" class="tab-content mx-auto">
+                            <h3 data-i18n="register.content4.1">scholarship</h3>
+                            <p data-i18n="register.content4.2">To encourage delegates that are willing to explore this year’s annual theme and academic topics even further, this year we have initiated the Scholarship Program.</p>
+                            <h4 data-i18n="register.content4.5">Method of Application</h4>
+                            <p data-i18n="register.content4.6">Please fill in the registration form below (you won’t have to fill in the ordinary registration forms) and complete the missions in the attachment. If you pass the application process, we will notify you via email. If not, your application will be viewed as (successful) regular registration</p>
+							<h4 data-i18n="register.content4.7">Scholarship amount</h4>
+							<p data-i18n="register.content4.8">2500 NTD</p>
+							<h4 data-i18n="register.content4.9">Quota</h4>
+							<p data-i18n="register.content4.10">There will be a limit on applicants. GIS Taiwan reserves the right to determine the ultimate amount of scholarship delegates.</p>
+                            <h4 data-i18n="register.content4.11">Application Process</h4>
+							<ol>
+								<li data-i18n="register.content4.12">Please film and edit a 3-minute video related to the annual theme “Reset the Mindset”. There are no creative restrictions, however please refrain from including violent, graphic, or racist scenes. The organizing committee will post the videos that stand out in our official Instagram account as a reward.</li>
+								<li data-i18n="register.content4.13">Other discounts do not apply if you have applied for the Financial Aid Program.
+								</li>
+								<ol type="a">
+									<li data-i18n="register.content4.15"></li> 
+									<li data-i18n="register.content4.16"></li> 
+									<li data-i18n="register.content4.17"></li> 
+									<li data-i18n="register.content4.18"></li> 
+									<li data-i18n="register.content4.19"></li> 
+								</ol>
+                        	</ol>
+							<ol start="3">
+								<li data-i18n="register.content4.14"></li>
+							</ol>
+							<p><li data-i18n="register.content4.20">if you pass the application process, we will notify you via email. If not, your application will be viewed as (successful) regular registration. GIS Taiwan reserves the right to amend the terms of the scholarship program.</li></p>
+							<h4 data-i18n="register.content3.8">Registration form</h4>
+                            <div class="container my-5">
+                                <div class="row justify-content-around">
+									<!--
+                                    <div class="col-md-4 col-8 mb-4 mb-md-0 mt-1 mt-md-0">
+                                        <a href="https://www.wjx.top/m/34204032.aspx" target="_blank" class="btn btn-lg btn-primary formlink" data-i18n="register.content3.10">Registration Form for China Delegates</a>
+                                    </div>
+									-->
+                                    <div class="col-md-4 col-8 mt-1 mt-md-0">
+                                        <a href="https://forms.gle/PEKL44xRVGfCVTTZ6" target="_blank" class="btn btn-lg btn-primary formlink" data-i18n="register.content4.21">Scholarship Program Form</a>
+                                    </div>
+                                </div>
+                            </div>
+
+						</section>
+						<section id="content5" class="tab-content mx-auto">
+						  <h3 data-i18n="register.content5.1">Financial Aid</h3>
+						    <p data-i18n="register.content5.2">
+							    GIS Taiwan 2020 welcomes students to participate in our confer ence. If any
+								    budgetary shortfall should inhibit their ability to attend our conference,
+									    it is encouraged to apply for Financi al Aid. The financial aid grant will
+										    subside conference and accommodation fees.
+											  </p>
+											    <h4 data-i18n="register.content5.3">Eligibility</h4>
+												  <p data-i18n="register.content5.4">
+												      Students applying for Financial Aid must attach a Low Income Statement in
+													      the application and should be enrolled as a student in National Taiwan
+														      University.
+															    </p>
+																  <h4 data-i18n="register.content5.5">Application Process</h4>
+																    <p>
+																	    <span data-i18n="register.content5.6">Please email</span
+																		    ><a href="mailto:delegateaffair@gis-taiwan.ntu.edu.tw"
+																			      >delegateaffair@gis-taiwan.ntu.edu.tw</a
+																				      ><span data-i18n="register.content5.7"
+																					        >to apply for the Financial Aid. GIS Taiwan 2019 will provide a grant
+																							      contingent upon the circumstance.</span
+																								      >
+																									    </p>
+																										  <h4 data-i18n="register.content5.8">Important Information</h4>
+																										    <p data-i18n="register.content5.9">
+																											    GIS Taiwan Organizing Team retains all rights to the number of financial aid
+																												    grants that will be distributed, and to whom they will be awarded.
+																													  </p>
+																													    <p data-i18n="register.content5.10">
+																														    All participants must make an initial deposit of the application and hotel
+																															    fees regardless of whether or not they will be receiving financial aid. All
+																																    financial aid will be given in New Taiwanese Dollar after the conference
+																																	    ends. This is to ensure financial aid recipients will participate in GIS
+																																		    Taiwan 2019 for its full duration.
+																																			  </p>
+																																			    <p data-i18n="register.content5.11">
+																																				    Failure to attend two or more GIS Taiwan 2019 sessions, or any highly
+																																					    inappropriate and disrespectful demeanor can result in the revocation of
+																																						    financial aid.
+																																							  </p>
+																																							    <p data-i18n="register.content5.12">
+																																								    Should any false information or plagiarism, intentional or unintentional, be
+																																									    found in your application, you will be immediately disqualified from not
+																																										    only our financial aid program, but also participating in GIS Taiwan 2019.
+																																											  </p>
+																																											    <p data-i18n="register.content5.13">
+																																												    Other discounts do not apply if you have applied for the Financial Aid
+																																													    Program.
+																																														  </p>
+																																														    <p>
+																																															    <span data-i18n="register.content5.14"
+																																																      >Our staff can be reached at all times, please do not hesitate to contact </span
+																																																	      ><a href="mailto:delegateaffair@gis-taiwan.ntu.edu.tw"
+																																																		        >delegateaffair@gis-taiwan.ntu.edu.tw</a
+																																																				    ><span data-i18n="register.content5.15"> for more information.</span>
+																																																					  </p>
+																																																					  </section>
+
+						<!--
+                        <section id="content5" class="tab-content mx-auto">
+                            <h3 data-i18n="register.content5.1">Field Trip</h3>
+                            <p data-i18n="register.content5.2">GIS Taiwan arranged an optional two-day field trip after the conference, allowing all participants from all over the world to discover the beauty of Taiwan. This will definitely be a great chance for you to visit world-famous tourist attractions and try out Taiwanese gourmet in night markets. GIS Taiwan is looking forward to showing the greatest part of Taiwan, creating unforgettable memories with new friends, and drawing to a perfect end in Taiwan.</p>
+                            <p data-i18n="register.content5.3">13th July (Sat.) - 14th July (Sun.)</p>
+                            <p data-i18n="register.content5.4">Field Trip Fee: 2500 NTD, including accommodation and tickets.</p>
+                            <p data-i18n="register.content5.">Maximum delegates : 40 ( Places will be offered on a first-come-first-served basis. )</p>
+                            
+                            <br>
+                            <h4 data-i18n="register.content5." class="text-center">Taiwan’s Northwest Jem— Yilan</h4>
+                            <div class="spot">
+                                <p data-i18n="register.content5.">｜The National Center for Traditional Arts</p>
+                                <div class="row">
+                                    <div class="col-md-6 col-12 ">
+                                        <p data-i18n="register.content5.">Along the Tongshan River, you can find The National Center for Traditional Arts. The center gives tourists a glimpse of traditional Taiwanese arts, with performance of folk music, opera, dance, toy-making and temple decorations. Tourists can experience traditional craftsmanship such as Hakka Indigo Dyeing. </p>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <img src="img/field_trip/Center_of_Traditional_Arts.jpg" alt="" title=""/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="spot">
+                                <p data-i18n="register.content5.">｜Luodong Night Market</p>
+                                <div class="row">
+                                    <div class="col-md-6 col-12 order-md-1 order-2">
+                                        <img src="img/field_trip/Luodong_Nightmarket.jpg" alt="" title=""/>
+                                    </div>
+                                    <div class="col-md-6 col-12 order-md-2 order-1">
+                                        <p data-i18n="register.content5.">Luodong Night Market is one of the biggest and most packed night markets at Yilan. It is a lovely place to spend your evening with friends, enjoying cheap and marvelous food which is near our accommodation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="spot">
+                                <p data-i18n="register.content5.">｜Kavalan Whisky Distillery</p>
+                                <div class="row">
+                                    <div class="col-md-6 col-12">
+                                        <p data-i18n="register.content5.">Established in 2005, Kavalan is Taiwan’s first whiskey-maker and the nation’s only family-owned whiskey distillery. The pure water and fresh air make this part of the subtropical island the ideal environment for the production of whisky.</p>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <img src="img/field_trip/Kavalan_Distillery.jpg" alt="" title=""/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="spot">
+                                <p data-i18n="register.content5.">｜Lanyang Museum</p>
+                                <div class="row">
+                                    <div class="col-md-6 col-12 order-md-1 order-2">
+                                        <img src="img/field_trip/Lanyang_ Museum.jpg" alt="" title=""/>
+                                    </div>
+                                    <div class="col-md-6 col-12 order-md-2 order-1">
+                                        <p data-i18n="register.content5.">Yilan is itself a mesmerizing museum and the Lanyang Museum is a window into better understanding of this area. Lanyang Museum is a cultural foundation for Yilan, where residents engage in meaningful learning and enjoy burgeoning cultural space. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="spot">
+                                <p data-i18n="register.content5.">｜Jiu Fen Old Street</p>
+                                <div class="row">
+                                    <div class="col-md-6 col-12">
+                                        <p data-i18n="register.content5.">Nestled against the mountains,  the quaint Jiufen Old Street offers winding streets hemmed in by traditional shops and vendors. Sip tea in the famous A Mei Teahouse, or walk as you savor traditional Taiwanese sweets. </p>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <img src="img/field_trip/Jiufen_Old_Street.jpg" alt="" title=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+						-->
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <!--==========================
+            Footer
+            ============================-->
+            <footer id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 footer-info">
+                            <div class="mb-2 mr-2">
+                                <h4 class="h1">GIS TAIWAN</h4>
+                            </div>
+                            <p class="text-justify" data-i18n="footer.des">GIS Taiwan is an international student forum instructed by National Taiwan University and organized by students. Established in 2009, we assemble scholars, entrepreneurs, and student delegates all over the world, integrating academic knowledge into practical application, building a platform across generation and industries, and promoting diverse voices.</p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-contact">
+                            <h4 class="h1" data-i18n="footer.contact_us">Contact Us</h4>
+                            <div class="br">
+                                <p data-i18n="footer.address1">National Taiwan University</p>
+                                <p data-i18n="footer.address2">#1, Sec. 4 Roosevelt Rd.</p>
+                                <p data-i18n="footer.address3">Taipei 10617, Taiwan (R.O.C.)</p>
+                                <p data-i18n="footer.phone"><strong>Phone:</strong></p>
+                                <p>+8862-33662063~66 ext.17</p>
+                                <p data-i18n="footer.email"><strong>Email:</strong></p>
+                                <p>gis-taiwan@gis-taiwan.ntu.edu.tw<br></p>
+                            </div>
+                            <p>
+                            
+                            <div class="social-links">
+                                <a href="https://www.youtube.com/user/GISTaiwan" class="youtube" target="_blank" ><i class="fa fa-youtube"></i></a>
+                                <a href="https://www.facebook.com/GISTaiwan/" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/gistaiwan/" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div id="map_container"></div>
+                            <iframe width=100% src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.492786925282!2d121.53756311415944!3d25.017345345114695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a989fe322ea9%3A0x21750404ee1d7f66!2sNational+Taiwan+University!5e0!3m2!1sen!2stw!4v1548094327762" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>	
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright <strong>GISTAIWAN</strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    <!--
+                        All the links in the footer should remain intact.
+                        You can delete the links only if you purchased the pro version.
+                        Licensing information: https://bootstrapmade.com/license/
+                        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
+                    -->
+                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                </div>
+            </div>
+        </footer><!-- #footer -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        <!-- Uncomment below i you want to use a preloader -->
+        <!-- <div id="preloader"></div> -->
+
+        <!-- JavaScript Libraries -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/15.0.1/i18next.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-xhr-backend/2.0.0/i18nextXHRBackend.min.js"></script>
+        <script src="./js/translation.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeh-1p7qlFoTNtr9ZldL4k3vjKC4Ny8RM" async defer></script>
+        <script src="lib/jquery/jquery.min.js"></script>
+        <script src="lib/jquery/jquery-migrate.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/superfish/hoverIntent.js"></script>
+        <script src="lib/superfish/superfish.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!-- Contact Form JavaScript File -->
+        <script src="contactform/contactform.js"></script>
+
+        <!-- Template Main Javascript File -->
+        <script src="js/main.js"></script>
+        <script src="js/register.js"></script>
+
+    </body>
+</html>
