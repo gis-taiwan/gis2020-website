@@ -62,7 +62,7 @@
             "theme": "Theme",
             "theme_detail": "Reset the Mindset",
             "time": "Time",
-            "time_detail": "6th, July, 2020 - 10th, July, 2020",
+            "time_detail": "6th July to 10th July, 2020",
             "participants": "Participants",
             "participants_detail": "Applicants are mainly undergraduate or graduate students. High-school students can apply via High-School Program.",
             "language": "Language",
@@ -75,11 +75,11 @@
             "location_detail3": "Taipei 10617, Taiwan (R.O.C.)",
             "timeline": {
                 "ebird": "Early Bird Registration",
-                "ebird_date": "10th, February, 2020 - 24th, March, 2020",
+                "ebird_date": "10th February to 24th March, 2020",
                 "regular_s": "Regular Registration",
-                "regular_s_date": "1st, April, 2020 - 12th, May, 2020",
+                "regular_s_date": "1st April to 12th May, 2020",
                 "regular_e": "Late Registration",
-                "regular_e_date": "13th, May, 2020 - 31th, May, 2020",
+                "regular_e_date": "13th May to 31th May, 2020",
                 "release": "Release of Participation",
                 "release_date": "11th, June, 2020"
             }
