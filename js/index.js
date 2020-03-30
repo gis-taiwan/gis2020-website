@@ -36,7 +36,7 @@ GMT-0600 = Central Standard Time
 GMT-0500 = Eastern Standard Time
 plus 1 for Daylight Savings
 */
-var eventStart = new Date(Date.parse('07/06/2020 8:00 am'));
+var eventStart = new Date(Date.parse('01/25/2021 8:00 am'));
 /* 
 timeToEvent = function name
 eventStart = countdown date 
