@@ -8,7 +8,7 @@
 
   //popup notification
   $(window).on("load", function() {
-    $("#modal34").modal("toggle");
+    $("#postpone-modal").modal("toggle");
   });
 
   $(window).on('scroll', function () {
