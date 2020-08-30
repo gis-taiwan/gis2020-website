@@ -31,10 +31,6 @@
   outline: none;
 }
 
-.price_tag {
- color: rgba(255,0,0,1);
-}
-
 /*Fun begins*/
 .tab_container {
 	width: 90%;
@@ -54,7 +50,7 @@ label {
   font-size: 18px;
   display: block;
   float: left;
-  width: 25%;
+  width: 33%;
   padding: 1.5em;
   color: #757575;
   cursor: pointer;
