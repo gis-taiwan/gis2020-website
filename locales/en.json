@@ -286,8 +286,8 @@
             "q_category": {
                 "1": {
                     "sub_title": "Registration Process",
-                    "q1": "When can I register for GIS Taiwan 2021?",
-                    "q1_ans": "Our early-bird registration starts from August 31st to October 12th. Regular registration follows and ends on November 24th.",
+                    "q1": "When can I register for GIS Taiwan 2022?",
+                    "q1_ans": "Our early-bird registration starts from August 23rd to September 17th. Regular registration starts from October 1st to November 19th.",
                     "q2": "How can I confirm that I have gotten into the interview section?",
                     "q2_ans": "We will inform you shortly after you submit the written registration form. An email with details of your interview would then be sent.",
                     "q3": " When do I know that I passed the interview?",
@@ -296,7 +296,7 @@
                 "2": {
                     "sub_title": "Payment",
                     "q1": "How much is the conference fee?",
-                    "q1_ans": "The conference fee is NTD 4000 for early-bird applicants and NTD 5000 for those who register at the regular round. Also, we offer accommodations with an additional NTD 3300. Breakfast included. For more information and discounts, please consult the “registration” section of our website.",
+                    "q1_ans": "The conference fee is NTD 4500 for early-bird applicants and NTD 5000 for those who register at the regular round. For more information and discounts, please consult the “registration” section of our website.",
                     "q2": "How do I complete the payment?",
                     "q2_ans": "Please consult the “registration” section of our website."
                 },
@@ -306,8 +306,8 @@
                     "q1_ans": "In order to strengthen the cooperation between industry and academia, and increase the intensity of communication between delegates, the symposium will closely collaborate with enterprises on academic Topics. Delegates will develop a creative, complete, and feasible Action Project with mentors’ instruction on these topics, and present the project in a poster exhibition on the last day. GIS Taiwan will invite professional judges to select the winners and award them with certificates and scholarships.",
                     "q2": "Are there other activities besides the five-day symposium?",
                     "q2_ans": "We do offer various activities, including our ultimate night tour and the one and only culture festival. More related information will be released on our official website and Facebook fan page.",
-                    "q3": "Is full participation during the five-day symposium required?",
-                    "q3_ans": "To ensure the quality of the conference, delegates’ full participation in the forum is required. If any unpreventable factor occurs, resulting in the partial absence of the delegates, delegates should inform the operating committee at the earliest possible time. We do apologize for your inconvenience. Should a delegate miss over half a day of the symposium, we will not award that delegate his/her participation certificate."
+                    "q3": "Is full participation during the symposium required?",
+                    "q3_ans": "To ensure the quality of the conference, delegates’ full participation in the forum is required. If any unpreventable factor occurs, resulting in the partial absence of the delegates, delegates should inform the operating committee at the earliest possible time. We do apologize for your inconvenience. Should a delegate miss over a day of the symposium, we will not award that delegate his/her participation certificate."
                 },
                 "4": {
                     "sub_title": "Delegate Etiquette",
@@ -321,8 +321,8 @@
                 "5": {
                     "sub_title": "Counter-COVID 19 Measures",
                     "q1": "What happens if there is another outbreak and no gathering is allowed?",
-                    "q1_ans": "We will refund any previously paid fees if GIS 2021 is cancelled due to force majeure. For more information, please refer to the terms and conditions of GIS 2021.",
-                    "q2": "Should I wear facemasks during GIS 2021?",
+                    "q1_ans": "We will refund any previously paid fees if GIS 2022 is cancelled due to force majeure. For more information, please refer to the terms and conditions of GIS 2022.",
+                    "q2": "Should I wear facemasks during GIS 2022?",
                     "q2_ans": "Delegates must follow the health guidelines of the National Health Command Center (NHCC)  and NTU, including but not limited to wearing facemasks during the symposium.",
                     "q3": "Will the venue be sanitized, or will sanitizers be provided?",
                     "q3_ans": "Yes it will. We will sanitize the venue regularly, and ethanol will be offered for hand sanitization purposes."
@@ -609,19 +609,19 @@
             "l22": "Green Renaissance",
             "l23": "Sci-Tech Society",
             "l24": "Blockchain Reimagined",
-            "l21_des": "economy has an inseparable connection to our life. this year, we will bound from “the great wealth transfer” to discuss the role for our generation and the changes we can make in the era when baby boomers start to fade. facing their wealth, what the millennials want to do is changing the world instead of merely satisfying their material needs. with new techniques and technology, we will exert our power to break the rigid system and the stale regulations and to define the novel era on our own. gis taiwan hopes that every delegate can face challenges and opportunities under the new economy trend with a more confident attitude and further change the world.",
-            "l22_des": "the world is surrounded by the internet in 21st century which is a faced with an unprecedented change. the y and z generations are labelled as “unrealistic” and “aimless”, but few people have taught them how to face the changing world. this year, gis taiwan will focus on the “educational revolution” and “social innovation”. digging into the fundamentals, delegates will solve problems and build up solid sustainable development foundations. gis taiwan hopes delegates can realise the transformation of thinking in the new era, imagine more about future education, and ignite the eagerness to change.",
-            "l23_des": "as we all know, the demographic structure is determined by both birth rate as well as death rate. the decline of both rates nowadays gives rise to the occurrence of aging society and the tendency to have fewer children, which lead to great impacts on the society, economy and moral standards. this year, gis taiwan will place emphasis on ”smart health” and ”long-term care” with an eye to exploring the revolutionary innovation brought by the combination of technology and medicine as well as its future potential. what kinds of technological applications or social mechanism we can expect to assist us when we age? gis taiwan hopes delegates could come up with brand new solutions and possibilities for the problems brought by the aging society and therefore influence the world with their enthusiasm, empathy, kindness and wisdom.",
-            "l24_des": "the impact of climate change becomes increasingly fierce as the average temperature is rising continuously. there are more and more changes in the climate and the environment which affect human, creatures and the whole ecosystem. as the future generation to come, it is an issue of our time to coexist with the environment while the past destruction had been done. this year, gis taiwan will launch the discussion of the interaction between man and land. we will explore the connection between environment and technology as well as the opportunities and challenges we will face. we hope every delegate can unleash the strength of sustainability and construct sustainable environment together.",
+            "l21_des": "During 2020 and 2021, the pandemic has struck the globe, changing people's lifestyles dramatically, and the daily routine that people were used to has become an unreachable dream.\nAlthough the world is gradually getting on track, the loneliness, isolation, and uncertainty, have resulted in the torture and trauma of people’s mental health undoubtedly, requiring the recovery of the entire society and the policy considering every aspect in order to heal. As a result, we would like to discuss how to face the trauma while confronting such a great change, and retrieve the pace of normal life after recovery.",
+            "l22_des": "In the finance industry, corporations have been taking ESG issues and sustainability into considerations when making investment decisions, so as to achieve the maximum social benefit.Impact investing is a more active way of implementing ESG considerations into investing. We would like to help delegates understand that we don't have to choose between the pursuit of profits and sustainability. They can be achieved together.",
+            "l23_des": "Sci-Tech Society addresses two questions. One, what effect does the appliance of technology have on different people( race, gender, class,etc.) Second, how does society respond to the development of technology? Do we accept or reject them? At first glance, technology is rational and objective, bringing convenience and advancement to society. However, designers and users frame/shape technologies under different circumstances subjectively. “Technology” and “Society” are inextricably intertwined, influencing and shaping each other. It is this interrelationship that Sci-Tech Society strives to unravel.",           
+            "l24_des": "From Bitcoin to NFT, the application of blockchain has gradually become a part of people's daily lives and has imperceptibly influenced the way people live. However, its application is by no means limited to finance. The seemingly sophisticated technology is closely related to the lives of ordinary people. The application of blockchain technology in social innovation and placemaking will help solve social problems and revitalize communities.",
             "l3": "",
             "l31": "Social Resilience",
             "l32": "Corporate ESG Resolution",
-            "l33": "Gender Mainstreaming",
+            "l33": "Gendered Innovation",
             "l34": "Social Reinvention",
-            "l31_des": "Data Surge is mainly caused by the new technology trend - Big Data.The creation of big data is usually attributed to advancing solutions to complex problems in the fields of finance, technology, transportation, and education, etc. Nowadays, the public has criticized the big data breaches causingthe loss of personal information privacy, especially the large collection and storage of confidential data as well as individual data information widespread in various ways. Through the Action Project The Future Role of Data, the student delegates are expected to propose idea and appropriate solutions to raise awareness on this issue and improve the digital security.",
-            "l32_des": "The significance of Green Actions has been promoted to the public in the past decades. People are getting more and more sensitive to the environmental issues; for instance, the pictures showing the sea turtle with plastic straw stuck up its nose has aroused the public awareness of environmental protection. In addition, the close linkage between environmental degradation and economic development has not only drawn the attention of the public, but the industries and the government. Besides of the public, some corporates are putting efforts to their Corporate Social Responsibility to fit their government policy. Nevertheless, striving to solve the environmental problem fundamentally, we must implement the solutions starting from our daily lives, which is currently undergoing with an unprecedented transformation.Through the Action Project Green Hunting, student delegates will investigate and propose a solution to make go green not only a slogan, but a direct action.",
-            "l33_des": "The concept of Social Stigma means the stereotypes from the public toward the less-privileged groups. We hope to improve the circumstances through the following three aspects, which are poverty, ethnicity, and gender. We will then explore the cause of the formation and the challenges of the groups. Through the Action Project The Poverty Trap, we will further focus mainly on poverty, hoping that the student delegates will come up with solutions to help the poverty-stricken people and further getting rid of the poverty trap.",
-            "l34_des": "Since the 18th century, developing capitalism had granted prosperity to countries worldwide, which deeply affected people’s perception and social structure. However, in recent days, the fundamental flaws of capitalism have contributed to the current social problems, such as the rise in inequality, globalization, and how to sustain social development. Through the Action Project Shared Value Utopia, the student delegates will rethink the pros and cons of capitalism, and come up with ideas of building a company that focuses on how to strike a balance between production efficiency and social value.",
+            "l31_des": "In the action project, the delegates are supposed to choose a problem to tackle from the three assigned issues (the lack of information disclosure, the insufficient attention to the policy of mental health, and people’s distrust and opposition to the government) , and analyze it with a related case study. After deciding their target problem, they have to come up with their solution in the form of white paper for the government. The white paper should include the actual approach of the case being chosen, comparison of the situation between the case and Taiwan, methods of localizing the concept, and the practical solution and its expected outcome.",
+            "l32_des": "In the action project, delegates need to tackle a problem with the knowledge they have learned from the previous three dimensions and workshop. Delegates will first decide one of the two companies (companies to be determined) which they would like to help. Second, delegates have to use the information given to understand the company’s goals, plans, and background. Finally, they need to hand out their solution to the problem in the form of a handmade poster. Other than that, our partnered company will receive delegates’ opinions as potential suggestions.",
+            "l33_des": "TBA",
+            "l34_des": "“Social Reinvention” aims to utilize tools provided by blockchain technology to address problems in this society. To start with, the delegates should define issues of their selection. This can range from difficulties in a local area to pervasive problems troubling the whole society. With the help of veteran mentors, the delegates will make use of blockchain technology to come up with ingenious solutions. We hope that this Action Project will motivate the delegates to open up possibilities and reinvent society in the future.",
             "view_more": "View More"
         }
     },
@@ -698,7 +698,7 @@
         "saholea4": "We ask ourselves to generate the best product and offer each customer the most exclusive beauty care. No pigments, no dimethicone (shampoo), no estrogen, no triclosan, no animal experiments, plant extracts, no excessive chemical additives, no alcohol."
     },
     "speaker": {
-        "1": "speaker",
+        "1": "Speakers of GIS 2021",
         "event": {
             "1": "Opening Ceremony",
             "2": "Summit",
