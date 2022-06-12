@@ -30,9 +30,9 @@ else{ // cookie === "undefined"
 var agenda = document.getElementById("agenda_pic");
 if(agenda != null){
     if(current === 0)
-        document.getElementById("agenda_pic").src="./img/agenda-en.png";
+        document.getElementById("agenda_pic").src="./img/agenda-en.jpg";
     else
-        document.getElementById("agenda_pic").src="./img/agenda-zh.png";
+        document.getElementById("agenda_pic").src="./img/agenda-zh.jpg";
 }
 
 
