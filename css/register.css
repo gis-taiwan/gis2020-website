@@ -45,7 +45,7 @@ input, section {
   display: none;
 }
 
-label {
+input[type="radio"] + label {
   font-weight: 700;
   font-size: 18px;
   display: block;
@@ -76,8 +76,28 @@ label {
   color: rgba(89,182,171,1)/*#0CE*/;
 }
 
+input[type="checkbox"] {
+  display: inline-flex;
+}
 
 
+a:hover {
+  color: yellow;
+}
+
+/* input[type="checkbox"] + label {
+  font-weight: 100;
+  font-size: 16px;
+  display: block;
+  float: none;
+  width: 100%;
+  padding: none;
+  color: black;
+  cursor: none;
+  text-decoration: none;
+  text-align: none;
+  background: none;
+} */
 /*
 #tab1:checked ~ #content1,
 #tab2:checked ~ #content2,
@@ -101,6 +121,8 @@ label {
 .tab_container .tab-content h3  {
   text-align: center;
 }
+
+
 /*
 .tab_container [id^="tab"]:checked + label {
   background: #fff;
@@ -112,14 +134,14 @@ label {
 }
 */
 
-label .fas {
+input[type="radio"] + label .fas {
   font-size: 1.3em;
   margin: 0 0.4em 0 0;
 }
 
 /*Media query*/
 @media only screen and (max-width: 900px) {
-  label span {
+  input[type="radio"] + label span {
     display: none;
   }
   
@@ -305,3 +327,4 @@ a.btn.signup{
     margin-top:30px;
 }
 
+ 

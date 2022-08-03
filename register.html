@@ -52,8 +52,9 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
+    <!-- <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
     <!-- Libraries CSS Files -->
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <link
@@ -295,9 +296,9 @@
                 >Financial Aid<br /></span
             ></label>
             <section id="content1" class="tab-content mx-auto">
-              <h3 data-i18n="register.content1.1">Registration</h3>
-              <h4 data-i18n="register.content1.2">Registration Date</h4>
-              <h5 data-i18n="register.content1.3">Early Bird:</h5>
+              <h3 data-i18n="register.content1.1"></h3>
+              <h4 data-i18n="register.content1.2"></h4>
+              <h5 data-i18n="register.content1.3"></h5>
               <p data-i18n="register.content1.4">
                 31th August to 12th October, 2020
               </p>
@@ -404,13 +405,342 @@
 
                             <p data-i18n="register.content1.30">Please attach the letter of recommendation to the Essay Questions Upload section in the Application Form.</p> 
 							-->
-              <div class="mx-auto text-center my-5">
-                <a
+              <h4>Register</h4>
+              <div class="mx-auto text-center my-5">  
+                <!-- <a
                   href="javascript:show('3',false)"
                   class="btn btn-lg btn-primary signup"
                   data-i18n="register.content1.31"
                   >Sign Up</a
-                >
+                > -->
+                <div class="card" style="border-radius: 15px;">
+                  <div class="card-body">
+                    <h5>Terms & Conditions</h5>
+                    <a href="https://docs.google.com/document/d/15_RH8nBVkaili0Zvmb9aU52X2Gj0QFqXqpw8Vx4Q9cY/edit">Terms & Conditions</a>
+                    <div class="row align-items-center pb-3">
+                      <div class="col col-12 col-sm-6 col-md-4 col-lg-12 ps-5">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                        <label>I agree to the GIS 2023 Terms and Conditions</label>
+                        <!-- <p>I agree to the GIS 2023 Terms and Conditions</p> -->
+                      </div>
+                    </div>
+                    <!-- TODO Fix checkbox -->
+                    <!-- <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                      </label>
+                    </div>
+                    -->
+
+
+                    <hr class="mx-n3">
+                    
+                    <h5>Personal Information</h5>
+                    <div class="row align-items-center pt-4 pb-3">
+                      <div class="col col-12 col-sm-6 col-md-4 col-lg-3 ps-5">
+                        <h6 class="mb-0">Last name</h6>
+                      </div>
+                      <div class="col pe-5">
+                        <input type="text" class="form-control form-control-md" />
+                      </div>
+                      <div class="col ps-5">
+                        <h6 class="mb-0">First name</h6>
+                      </div>
+                      <div class="col pe-5">
+                        <input type="text" class="form-control form-control-md" />
+                      </div>
+                    </div>
+
+                    <div class="small text-muted mt-2">Please make sure the name you fill in match the name on your passport</div>
+
+                    <div class="row align-items-center pt-4 pb-3">
+                      <div class="col col-12 col-sm-6 col-md-4 col-lg-3 ps-5">
+                        <h6 class="mb-0">Date of Birth</h6>
+                      </div>
+                      <div class="col pe-5">
+                        <input type="date" class="form-control form-control-md" />
+                      </div>
+                      <div class="col ps-5">
+                        <h6 class="mb-0">Preferred Name</h6>
+                        <div class="small text-muted mt-2">This name will be printed on your name tag.</div>
+                      </div>
+                      <div class="col pe-5">
+                        <input type="text" class="form-control form-control-md" />
+                      </div>
+                    </div>
+                    
+                    <div class="row align-items-center pt-4 pb-3">
+                      <div class="col col-12 col-sm-6 col-md-4 col-lg-3 ps-5">
+                        <h6 class="mb-0">Sex</h6>
+                      </div>
+                      <div class="col pe-5">
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Sex</option>
+                          <option value="1">Male</option>
+                          <option value="2">Female</option>
+                          <option value="3">Others</option>
+                        </select>
+                      </div>
+                      <div class="col ps-5">
+                        <h6 class="mb-0">Preferred Gender Pronoun</h6>
+                      </div>
+                      <div class="col pe-5">
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Preferred Gender Pronoun</option>
+                          <option value="1">He/Him</option>
+                          <option value="2">She/Her</option>
+                          <option value="3">They/Them</option>
+                          <option value="4">Others</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    
+                    <div class="row align-items-center pt-4 pb-3">
+                      <div class="col col-12 col-sm-6 col-md-4 col-lg-3 ps-5">
+                        <h6 class="mb-0">Nationality</h6>
+                        <div class="small text-muted mt-2">Please disclose if you have dual citizenship, and split them with a space</div>
+                      </div>
+                      <div class="col pe-5">
+                        <input type="text" class="form-control form-control-md" />
+                      </div>
+                      <div class="col ps-5">
+                        <h6 class="mb-0">Education Level</h6>
+                      </div>
+                      <div class="col pe-5">
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Education Level</option>
+                          <option value="1">High School</option>
+                          <option value="2">Freshman</option>
+                          <option value="3">Sophomore</option>
+                          <option value="4">Junior</option>
+                          <option value="5">Senior</option>
+                          <option value="6">Fifth (or more) year of College</option>
+                          <option value="7">Graduate</option>
+                          <option value="8">PhD</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="row align-items-center pt-4 pb-3">
+                      <div class="col col-12 col-sm-6 col-md-4 col-lg-3 ps-5">
+                        <h6 class="mb-0">Dietary Requirements</h6>
+                      </div>
+                      <div class="col pe-5">
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Dietary Requirements</option>
+                          <option value="1">Non-vegetarian</option>
+                          <option value="2">Vegetarian</option>
+                          <option value="3">Pork-free</option>
+                          <option value="4">Beef-free</option>
+                        </select>
+                      </div>
+                      <div class="col ps-5">
+                        <h6 class="mb-0">Major</h6>
+                      </div>
+                      <div class="col pe-5">
+                        <input type="text" class="form-control form-control-md" />
+                      </div>
+                    </div>
+        
+                    <hr class="mx-n3">
+
+                    <h5>Contact Information</h5>
+
+                    <div class="row align-items-center pt-4 pb-3">
+                      <div class="col col-12 col-sm-6 col-md-4 col-lg-3 ps-5">
+                        <h6 class="mb-0">Email Address</h6>
+                      </div>
+                      <div class="col pe-5">
+                        <input type="email" class="form-control form-control-md" />
+                      </div>
+                      <div class="col ps-5">
+                        <h6 class="mb-0">Phone Number (with Country Code)</h6>
+                      </div>
+                      <div class="col pe-5">
+                        <input type="tel" class="form-control form-control-md" />
+                      </div>
+                    </div>
+
+                    <div class="row justify-content-center py-3">
+                      <div class="col-md-3 ps-5">
+        
+                        <h6 class="mb-0">Mailing Address</h6>
+        
+                      </div>
+                      <div class="col-md-6 align-self-center pe-5">
+        
+                        <input type="text" class="form-control form-control-md" />
+        
+                      </div>
+                    </div>
+
+                    <div class="row justify-content-center py-3">
+                      <div class="col-md-3 ps-5">
+        
+                        <h6 class="mb-0">Personal Facebook Profile Link</h6>
+        
+                      </div>
+                      <div class="col-md-6 pe-5">
+        
+                        <input type="url" class="form-control form-control-md" />
+        
+                      </div>
+                    </div>
+                    
+                    
+                    <hr class="mx-n3">
+                    
+                    <h5>Emergency Contact</h5>
+
+                    <div class="row align-items-center pt-4 pb-3">
+                      <div class="col col-12 col-sm-6 col-md-4 col-lg-3 ps-5">
+                        <h6 class="mb-0">Emergency Contact Name</h6>
+                      </div>
+                      <div class="col pe-5">
+                        <input type="text" class="form-control form-control-md" />
+                      </div>
+                      <div class="col ps-5">
+                        <h6 class="mb-0">Phone Number (with Country Code)</h6>
+                      </div>
+                      <div class="col pe-5">
+                        <input type="tel" class="form-control form-control-md" />
+                      </div>
+                    </div>
+
+                    <!-- <div class="row align-items-center py-3">
+                      <div class="col-md-3 ps-5">
+        
+                        <h6 class="mb-0">Relationship with Emergency Contact</h6>
+        
+                      </div>
+                      <div class="col-md-9 pe-5">
+        
+                        <input type="text" class="form-control form-control-md" />
+        
+                      </div>
+                    </div> -->
+
+                    <hr class="mx-n3">
+                    
+                    <h5>Registration Plan</h5>
+
+                    <div class="row align-items-center pt-4 pb-3">
+                      <div class="col col-12 col-sm-6 col-md-4 col-lg-3 ps-5">
+                        <h6 class="mb-0">Registration Plan</h6>
+                      </div>
+                      <div class="col pe-5">
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Registration Plan</option>
+                          <option value="1">Regular Registration</option>
+                          <option value="2">Partner Organziaton Registration</option>
+                          <option value="3">Group of 3 Registration</option>
+                          <option value="4">Group of 5 Registration</option>
+                        </select>
+                      </div>
+                      <div class="col ps-5">
+                        <h6 class="mb-0">Discount Code</h6>
+                      </div>
+                      <div class="col pe-5">
+                        <input type="text" class="form-control form-control-md" />
+                      </div>
+                    </div>
+
+                    <hr class="mx-n3">
+                    
+                    <h5>Accommodation</h5>
+
+                    <p>#TODO</p>
+
+                    <hr class="mx-n3">
+                    
+                    <h5>Academic Topic/Impact Project Choice</h5>
+
+                    <div class="row align-items-center pt-4 pb-3">
+                      <div class="col col-12 col-sm-6 col-md-4 col-lg-3 ps-5">
+                        <h6 class="mb-0">First Choice</h6>
+                      </div>
+                      <div class="col pe-5">
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Academic Topics</option>
+                          <option value="1">Currency Remodeling</option>
+                          <option value="2">New Paradign of Healthcare</option>
+                          <option value="3">Metaverse</option>
+                          <option value="4">Energy Reform</option>
+                        </select>
+                      </div>
+                      <div class="col ps-5">
+                        <h6 class="mb-0">Second Choice</h6>
+                      </div>
+                      <div class="col pe-5">
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Academic Topics</option>
+                          <option value="1">Currency Remodeling</option>
+                          <option value="2">New Paradign of Healthcare</option>
+                          <option value="3">Metaverse</option>
+                          <option value="4">Energy Reform</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="row align-items-center pt-4 pb-3">
+                      <div class="col col-12 col-sm-6 col-md-4 col-lg-3 ps-5">
+                        <h6 class="mb-0">Third Choice</h6>
+                      </div>
+                      <div class="col pe-5">
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Academic Topics</option>
+                          <option value="1">Currency Remodeling</option>
+                          <option value="2">New Paradign of Healthcare</option>
+                          <option value="3">Metaverse</option>
+                          <option value="4">Energy Reform</option>
+                        </select>
+                      </div>
+                      <div class="col ps-5">
+                        <h6 class="mb-0">Fourth Choice</h6>
+                      </div>
+                      <div class="col pe-5">
+                        <select class="form-select" aria-label="Default select example">
+                          <option selected>Academic Topics</option>
+                          <option value="1">Currency Remodeling</option>
+                          <option value="2">New Paradign of Healthcare</option>
+                          <option value="3">Metaverse</option>
+                          <option value="4">Energy Reform</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <hr class="mx-n3">
+                    
+                    <h5>Panel Discussion</h5>
+                    
+                    <div class="row align-items-center pb-3">
+                      <div class="col col-12 col-sm-6 col-md-4 col-lg-12 ps-5">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                        <label>I would like to particpate in the panel discussion as a student representative</label>
+                      </div>
+                    </div>
+                    <!-- <p>I would like to particpate in the panel discussion as a student representative</p> -->
+                    
+                    <hr class="mx-n3">
+                    
+                    <h5>Essay Assignment</h5>
+                    <a href="https://docs.google.com/document/d/15_RH8nBVkaili0Zvmb9aU52X2Gj0QFqXqpw8Vx4Q9cY/edit">Essay Questions</a>
+                    <div class="mx-10 px-5 py-4">
+                      <input class="form-control form-control-md" id="formFileMd" type="file" />
+                      <div class="small text-muted mt-2">Upload your essay assignment. Max file
+                        size 50 MB</div>
+                    </div>
+
+                    <hr class="mx-n3">
+        
+                    <div class="px-5 py-4">
+                      <button type="submit" class="btn btn-primary btn-lg">Send application</button>
+                    </div>
+        
+                  </div>
+                </div>
               </div>
             </section>
             <!--
@@ -664,7 +994,7 @@
                   the terms of the scholarship program.
                 </li>
               </p>
-              <h4 data-i18n="register.content3.8">Registration form</h4>
+              <h4 data-i18n="register.content3.8">Registration Form</h4>
               <div class="container my-5">
                 <div class="row justify-content-around">
                   <!--
@@ -678,7 +1008,7 @@
                       target="_blank"
                       class="btn btn-lg btn-primary formlink"
                       data-i18n="register.content4.21"
-                      >Scholarship Program Form</a
+                      ></a
                     >
                   </div>
                 </div>
@@ -687,7 +1017,7 @@
             <section id="content5" class="tab-content mx-auto">
               <h3 data-i18n="register.content5.1">Financial Aid</h3>
               <p data-i18n="register.content5.2">
-                GIS Taiwan 2020 welcomes students to participate in our confer
+                GIS Taiwan 20 welcomes students to participate in our confer
                 ence. If any budgetary shortfall should inhibit their ability to
                 attend our conference, it is encouraged to apply for Financi al
                 Aid. The financial aid grant will subside conference and
@@ -720,11 +1050,11 @@
                 and hotel fees regardless of whether or not they will be
                 receiving financial aid. All financial aid will be given in New
                 Taiwanese Dollar after the conference ends. This is to ensure
-                financial aid recipients will participate in GIS Taiwan 2019 for
+                financial aid recipients will participate in GIS Taiwan 2023 for
                 its full duration.
               </p>
               <p data-i18n="register.content5.11">
-                Failure to attend two or more GIS Taiwan 2019 sessions, or any
+                Failure to attend two or more GIS Taiwan 2023 sessions, or any
                 highly inappropriate and disrespectful demeanor can result in
                 the revocation of financial aid.
               </p>
@@ -732,7 +1062,7 @@
                 Should any false information or plagiarism, intentional or
                 unintentional, be found in your application, you will be
                 immediately disqualified from not only our financial aid
-                program, but also participating in GIS Taiwan 2019.
+                program, but also participating in GIS Taiwan 2023.
               </p>
               <p data-i18n="register.content5.13">
                 Other discounts do not apply if you have applied for the
