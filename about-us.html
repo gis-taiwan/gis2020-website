@@ -67,13 +67,18 @@
             License: https://bootstrapmade.com/license/
             ======================================================= -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R4CCX6W910"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-R4CCX6W910"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-R4CCX6W910');
+      gtag("config", "G-R4CCX6W910");
     </script>
   </head>
   <body>
@@ -178,7 +183,7 @@
                     >Basis of Selection</a
                   >
                 </li>
-                
+
                 <li>
                   <a href="./register.html#tab5" data-i18n="nav.financial-aid"
                     >Financial Aid</a
@@ -286,8 +291,7 @@
                     <th scope="row" data-i18n="about_us.table.4-1">
                       Conference Date
                     </th>
-                    <td data-i18n="about_us.table.4-2">
-                    </td>
+                    <td data-i18n="about_us.table.4-2"></td>
                   </tr>
                   <tr>
                     <th scope="row" data-i18n="about_us.table.5-1">Venue</th>
@@ -314,6 +318,8 @@
                   </tr>
                 </tbody>
               </table>
+              <h4 data-i18n="about_us.5">Brand Book</h4>
+              <div id="brand-book"></div>
             </div>
           </div>
         </div>
@@ -384,7 +390,7 @@
                 width="600"
                 height="450"
                 frameborder="0"
-                style="border:0"
+                style="border: 0"
                 allowfullscreen
               ></iframe>
             </div>
@@ -442,5 +448,19 @@
     <!-- Template Main Javascript File -->
     <script src="js/main.js"></script>
     <script src="js/about-us.js"></script>
+    <script src="/js/pdfobject.js"></script>
+    <script>
+      PDFObject.embed("/file/en.pdf", "#brand-book");
+      var brand_book = document.getElementById("brand-book").firstChild;
+      if (brand_book != null) {
+        if (current === 0) brand_book.firstChild.src = "/file/en.pdf";
+        else brand_book.firstChild.src = "/file/zh.pdf";
+      }
+    </script>
+    <style>
+      .pdfobject-container {
+        height: 25rem;
+      }
+    </style>
   </body>
 </html>
