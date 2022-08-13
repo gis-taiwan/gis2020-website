@@ -453,8 +453,8 @@
       PDFObject.embed("/file/en.pdf", "#brand-book");
       var brand_book = document.getElementById("brand-book").firstChild;
       if (brand_book != null) {
-        if (current === 0) brand_book.firstChild.src = "/file/en.pdf";
-        else brand_book.firstChild.src = "/file/zh.pdf";
+        if (current === 0) brand_book.src = "/file/en.pdf";
+        else brand_book.src = "/file/zh.pdf";
       }
     </script>
     <style>
