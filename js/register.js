@@ -236,11 +236,32 @@ const button = document.getElementById('application');
 button.addEventListener('click', async _ => {
   try {    
     var data = {
+        terms: document.getElementById('termsAndConditions').value,
         first_name: document.getElementById('first_name').value,
         last_name: document.getElementById('last_name').value,
-        // essay_files: document.getElementById('essay_file').files[0], 
+        date_of_birth: document.getElementById('date_of_birth').value,
+        preferred_name: document.getElementById('preferred_name').value,
+        sex: document.getElementById('sex').options[document.getElementById('sex').selectedIndex].text,
+        preferred_gender_pronoun: document.getElementById('preferred_gender_pronoun').options[document.getElementById('preferred_gender_pronoun').selectedIndex].text, 
         nationality: document.getElementById('nationality').value,
-        education_level: document.getElementById('education_level').options[document.getElementById('education_level').selectedIndex].text
+        education_level: document.getElementById('education_level').options[document.getElementById('education_level').selectedIndex].text,
+        dietary_requirements: document.getElementById('dietary_requirements').options[document.getElementById('dietary_requirements').selectedIndex].text,
+        major: document.getElementById('major').value,
+        email: document.getElementById('email').value,
+        phone_num: document.getElementById('phone_num').value,
+        mailing_address: document.getElementById('mailing_address').value,
+        fb_link: document.getElementById('fb_link').value,
+        ec_name: document.getElementById('ec_name').value,
+        ec_phoneNum: document.getElementById('ec_phoneNum').value,
+        r_plan: document.getElementById('r_plan').options[document.getElementById('r_plan').selectedIndex].text,
+        // TODO get group registration name
+        d_code: document.getElementById('d_code').value,
+        choice_1: document.getElementById('choice_1').value,
+        choice_2: document.getElementById('choice_2').value,
+        choice_3: document.getElementById('choice_3').value,
+        choice_4: document.getElementById('choice_4').value,
+        pd: document.getElementById('panel_discussion').value,
+        essay_files: document.getElementById('essay_file'),
     } 
     console.log(data)
     const response = await fetch('http://127.0.0.1:8000/delegate/', {
@@ -248,7 +269,6 @@ button.addEventListener('click', async _ => {
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(data)
     });
-    console.log(data)
     console.log('Completed!', response);
   } catch(err) {
     console.error(`Error: ${err}`);

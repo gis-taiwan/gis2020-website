@@ -466,7 +466,7 @@
                         <h6 class="mb-0">Sex</h6>
                       </div>
                       <div class="col pe-5">
-                        <select class="form-select" aria-label="Default select example">
+                        <select class="form-select" aria-label="Default select example" id="sex" value="">
                           <option selected>Sex</option>
                           <option value="1">Male</option>
                           <option value="2">Female</option>
@@ -477,7 +477,7 @@
                         <h6 class="mb-0">Preferred Gender Pronoun</h6>
                       </div>
                       <div class="col pe-5">
-                        <select class="form-select" aria-label="Default select example">
+                        <select class="form-select" aria-label="Default select example" id="preferred_gender_pronoun" value="">
                           <option selected>Preferred Gender Pronoun</option>
                           <option value="1">He/Him</option>
                           <option value="2">She/Her</option>
@@ -519,7 +519,7 @@
                         <h6 class="mb-0">Dietary Requirements</h6>
                       </div>
                       <div class="col pe-5">
-                        <select class="form-select" aria-label="Default select example">
+                        <select class="form-select" aria-label="Default select example" id="dietary_requirements" value="">
                           <option selected>Dietary Requirements</option>
                           <option value="1">Non-vegetarian</option>
                           <option value="2">Vegetarian</option>
@@ -531,7 +531,7 @@
                         <h6 class="mb-0">Major</h6>
                       </div>
                       <div class="col pe-5">
-                        <input type="text" class="form-control form-control-md" />
+                        <input type="text" class="form-control form-control-md" id="major" value=""/>
                       </div>
                     </div>
         
@@ -544,13 +544,13 @@
                         <h6 class="mb-0">Email Address</h6>
                       </div>
                       <div class="col pe-5">
-                        <input type="email" class="form-control form-control-md" />
+                        <input type="email" class="form-control form-control-md" id="email" value=""/>
                       </div>
                       <div class="col ps-5">
                         <h6 class="mb-0">Phone Number (with Country Code)</h6>
                       </div>
                       <div class="col pe-5">
-                        <input type="tel" class="form-control form-control-md" />
+                        <input type="tel" class="form-control form-control-md" id="phone_num" value="" />
                       </div>
                     </div>
 
@@ -562,7 +562,7 @@
                       </div>
                       <div class="col-md-6 align-self-center pe-5">
         
-                        <input type="text" class="form-control form-control-md" />
+                        <input type="text" class="form-control form-control-md" id="mailing_address" value=""/>
         
                       </div>
                     </div>
@@ -575,7 +575,7 @@
                       </div>
                       <div class="col-md-6 pe-5">
         
-                        <input type="url" class="form-control form-control-md" />
+                        <input type="url" class="form-control form-control-md" id="fb_link" value=""/>
         
                       </div>
                     </div>
@@ -590,13 +590,13 @@
                         <h6 class="mb-0">Emergency Contact Name</h6>
                       </div>
                       <div class="col pe-5">
-                        <input type="text" class="form-control form-control-md" />
+                        <input type="text" class="form-control form-control-md" id="ec_name" value="" />
                       </div>
                       <div class="col ps-5">
                         <h6 class="mb-0">Phone Number (with Country Code)</h6>
                       </div>
                       <div class="col pe-5">
-                        <input type="tel" class="form-control form-control-md" />
+                        <input type="tel" class="form-control form-control-md" id="ec_phoneNum" value=""/>
                       </div>
                     </div>
 
@@ -622,7 +622,7 @@
                         <h6 class="mb-0">Registration Plan</h6>
                       </div>
                       <div class="col pe-5">
-                        <select class="form-select" aria-label="Default select example">
+                        <select class="form-select" aria-label="Default select example" id="r_plan">
                           <option selected>Registration Plan</option>
                           <option value="1">Regular Registration</option>
                           <option value="2">Partner Organziaton Registration</option>
@@ -634,7 +634,7 @@
                         <h6 class="mb-0">Discount Code</h6>
                       </div>
                       <div class="col pe-5">
-                        <input type="text" class="form-control form-control-md" />
+                        <input type="text" class="form-control form-control-md" id="d_code" />
                       </div>
                     </div>
 
@@ -642,7 +642,7 @@
                     
                     <h5>Accommodation</h5>
 
-                    <p>#TODO</p>
+                    <p>GIS Taiwan 2023 is planning on providing accommodation for confirmed delegates. <br> Further information will be provided after the applicants has been confirmed.</p>
 
                     <hr class="mx-n3">
                     
@@ -653,7 +653,7 @@
                         <h6 class="mb-0">First Choice</h6>
                       </div>
                       <div class="col pe-5">
-                        <select class="form-select" aria-label="Default select example" id="choice1">
+                        <select class="form-select" aria-label="Default select example" id="choice_1">
                           <option selected>Academic Topics</option>
                           <option value="1">Currency Remodeling</option>
                           <option value="2">New Paradigm of Healthcare</option>
@@ -665,7 +665,7 @@
                         <h6 class="mb-0">Second Choice</h6>
                       </div>
                       <div class="col pe-5">
-                        <select class="form-select" aria-label="Default select example" id="choice2">
+                        <select class="form-select" aria-label="Default select example" id="choice_2">
                           <option selected>Academic Topics</option>
                           <option value="1">Currency Remodeling</option>
                           <option value="2">New Paradigm of Healthcare</option>
@@ -680,7 +680,7 @@
                         <h6 class="mb-0">Third Choice</h6>
                       </div>
                       <div class="col pe-5">
-                        <select class="form-select" aria-label="Default select example" id="choice3">
+                        <select class="form-select" aria-label="Default select example" id="choice_3">
                           <option selected>Academic Topics</option>
                           <option value="1">Currency Remodeling</option>
                           <option value="2">New Paradigm of Healthcare</option>
@@ -692,7 +692,7 @@
                         <h6 class="mb-0">Fourth Choice</h6>
                       </div>
                       <div class="col pe-5">
-                        <select class="form-select" aria-label="Default select example" id="choice4">
+                        <select class="form-select" aria-label="Default select example" id="choice_4">
                           <option selected>Academic Topics</option>
                           <option value="1">Currency Remodeling</option>
                           <option value="2">New Paradigm of Healthcare</option>
