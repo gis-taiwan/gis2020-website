@@ -347,7 +347,7 @@
 
               <h3 data-i18n="register.content1.14">Registration Plan</h3>
               <h4 data-i18n="register.content1.15">
-                Taiwanese College Students
+                Taiwanese Students
               </h4>
               <p data-i18n="register.content1.17">
                 Taiwanese citizens that are High School Graduates, or college
@@ -405,7 +405,7 @@
 
                             <p data-i18n="register.content1.30">Please attach the letter of recommendation to the Essay Questions Upload section in the Application Form.</p> 
 							-->
-              <h4>Register</h4>
+              <h3>Register</h3>
               <div class="mx-auto text-center my-5">  
                 <!-- <a
                   href="javascript:show('3',false)"
@@ -419,19 +419,10 @@
                     <a href="https://docs.google.com/document/d/15_RH8nBVkaili0Zvmb9aU52X2Gj0QFqXqpw8Vx4Q9cY/edit">Terms & Conditions</a>
                     <div class="row align-items-center pb-3">
                       <div class="col col-12 col-sm-6 col-md-4 col-lg-12 ps-5">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                        <input type="checkbox" class="form-check-input" name="termsAndConditions" />
                         <label>I agree to the GIS 2023 Terms and Conditions</label>
-                        <!-- <p>I agree to the GIS 2023 Terms and Conditions</p> -->
                       </div>
                     </div>
-                    <!-- TODO Fix checkbox -->
-                    <!-- <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">
-                        Default checkbox
-                      </label>
-                    </div>
-                    -->
 
 
                     <hr class="mx-n3">
@@ -439,16 +430,16 @@
                     <h5>Personal Information</h5>
                     <div class="row align-items-center pt-4 pb-3">
                       <div class="col col-12 col-sm-6 col-md-4 col-lg-3 ps-5">
-                        <h6 class="mb-0">Last name</h6>
-                      </div>
-                      <div class="col pe-5">
-                        <input type="text" class="form-control form-control-md" />
-                      </div>
-                      <div class="col ps-5">
                         <h6 class="mb-0">First name</h6>
                       </div>
                       <div class="col pe-5">
-                        <input type="text" class="form-control form-control-md" />
+                        <input type="text" class="form-control form-control-md" id="first_name" value=""/>
+                      </div>
+                      <div class="col ps-5">
+                        <h6 class="mb-0">Last name</h6>
+                      </div>
+                      <div class="col pe-5">
+                        <input type="text" class="form-control form-control-md" id="last_name" value=""/>
                       </div>
                     </div>
 
@@ -458,20 +449,20 @@
                       <div class="col col-12 col-sm-6 col-md-4 col-lg-3 ps-5">
                         <h6 class="mb-0">Date of Birth</h6>
                       </div>
-                      <div class="col pe-5">
-                        <input type="date" class="form-control form-control-md" />
+                      <div class="col">
+                        <input type="date" class="form-control form-control-md" id="date_of_birth" value=""/>
                       </div>
-                      <div class="col ps-5">
+                      <div class="col col-12 col-sm-6 col-md-4 col-lg-3 ps-5">
                         <h6 class="mb-0">Preferred Name</h6>
                         <div class="small text-muted mt-2">This name will be printed on your name tag.</div>
                       </div>
                       <div class="col pe-5">
-                        <input type="text" class="form-control form-control-md" />
+                        <input type="text" class="form-control form-control-md" id="preferred_name" value=""/>
                       </div>
                     </div>
                     
                     <div class="row align-items-center pt-4 pb-3">
-                      <div class="col col-12 col-sm-6 col-md-4 col-lg-3 ps-5">
+                      <div class="col col-12 col-sm-5 col-md-4 col-lg-3 ps-5">
                         <h6 class="mb-0">Sex</h6>
                       </div>
                       <div class="col pe-5">
@@ -503,13 +494,13 @@
                         <div class="small text-muted mt-2">Please disclose if you have dual citizenship, and split them with a space</div>
                       </div>
                       <div class="col pe-5">
-                        <input type="text" class="form-control form-control-md" />
+                        <input type="text" class="form-control form-control-md" id="nationality" value=""/>
                       </div>
                       <div class="col ps-5">
                         <h6 class="mb-0">Education Level</h6>
                       </div>
                       <div class="col pe-5">
-                        <select class="form-select" aria-label="Default select example">
+                        <select class="form-select" aria-label="Default select example" id="education_level" value="">
                           <option selected>Education Level</option>
                           <option value="1">High School</option>
                           <option value="2">Freshman</option>
@@ -662,10 +653,10 @@
                         <h6 class="mb-0">First Choice</h6>
                       </div>
                       <div class="col pe-5">
-                        <select class="form-select" aria-label="Default select example">
+                        <select class="form-select" aria-label="Default select example" id="choice1">
                           <option selected>Academic Topics</option>
                           <option value="1">Currency Remodeling</option>
-                          <option value="2">New Paradign of Healthcare</option>
+                          <option value="2">New Paradigm of Healthcare</option>
                           <option value="3">Metaverse</option>
                           <option value="4">Energy Reform</option>
                         </select>
@@ -674,10 +665,10 @@
                         <h6 class="mb-0">Second Choice</h6>
                       </div>
                       <div class="col pe-5">
-                        <select class="form-select" aria-label="Default select example">
+                        <select class="form-select" aria-label="Default select example" id="choice2">
                           <option selected>Academic Topics</option>
                           <option value="1">Currency Remodeling</option>
-                          <option value="2">New Paradign of Healthcare</option>
+                          <option value="2">New Paradigm of Healthcare</option>
                           <option value="3">Metaverse</option>
                           <option value="4">Energy Reform</option>
                         </select>
@@ -689,10 +680,10 @@
                         <h6 class="mb-0">Third Choice</h6>
                       </div>
                       <div class="col pe-5">
-                        <select class="form-select" aria-label="Default select example">
+                        <select class="form-select" aria-label="Default select example" id="choice3">
                           <option selected>Academic Topics</option>
                           <option value="1">Currency Remodeling</option>
-                          <option value="2">New Paradign of Healthcare</option>
+                          <option value="2">New Paradigm of Healthcare</option>
                           <option value="3">Metaverse</option>
                           <option value="4">Energy Reform</option>
                         </select>
@@ -701,10 +692,10 @@
                         <h6 class="mb-0">Fourth Choice</h6>
                       </div>
                       <div class="col pe-5">
-                        <select class="form-select" aria-label="Default select example">
+                        <select class="form-select" aria-label="Default select example" id="choice4">
                           <option selected>Academic Topics</option>
                           <option value="1">Currency Remodeling</option>
-                          <option value="2">New Paradign of Healthcare</option>
+                          <option value="2">New Paradigm of Healthcare</option>
                           <option value="3">Metaverse</option>
                           <option value="4">Energy Reform</option>
                         </select>
@@ -717,7 +708,7 @@
                     
                     <div class="row align-items-center pb-3">
                       <div class="col col-12 col-sm-6 col-md-4 col-lg-12 ps-5">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                        <input type="checkbox" class="form-check-input" id="panel_discussion" />
                         <label>I would like to particpate in the panel discussion as a student representative</label>
                       </div>
                     </div>
@@ -728,7 +719,7 @@
                     <h5>Essay Assignment</h5>
                     <a href="https://docs.google.com/document/d/15_RH8nBVkaili0Zvmb9aU52X2Gj0QFqXqpw8Vx4Q9cY/edit">Essay Questions</a>
                     <div class="mx-10 px-5 py-4">
-                      <input class="form-control form-control-md" id="formFileMd" type="file" />
+                      <input class="form-control form-control-md" id="essay_file" type="file" value="" />
                       <div class="small text-muted mt-2">Upload your essay assignment. Max file
                         size 50 MB</div>
                     </div>
@@ -736,7 +727,7 @@
                     <hr class="mx-n3">
         
                     <div class="px-5 py-4">
-                      <button type="submit" class="btn btn-primary btn-lg">Send application</button>
+                      <button type="submit" class="btn btn-primary btn-lg" id="application">Send Application</button>
                     </div>
         
                   </div>
@@ -924,7 +915,7 @@
                   >delegateaffair@gis-taiwan.ntu.edu.tw</a
                 >
               </p>
-              <h4 data-i18n="register.content3.8">Registration form</h4>
+              <!-- <h4 data-i18n="register.content3.8">Registration form</h4>
               <div class="container my-5">
                 <div class="row justify-content-around">
                   <div class="col-md-4 col-8 mb-4 mb-md-0">
@@ -937,7 +928,7 @@
                     >
                   </div>
                 </div>
-              </div>
+              </div> -->
             </section>
 
             <section id="content4" class="tab-content mx-auto">

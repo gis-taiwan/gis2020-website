@@ -231,4 +231,26 @@ file to your project folder
     loop(); // End of registration guide
 }); 
 
+const button = document.getElementById('application');
 
+button.addEventListener('click', async _ => {
+  try {    
+    var data = {
+        first_name: document.getElementById('first_name').value,
+        last_name: document.getElementById('last_name').value,
+        // essay_files: document.getElementById('essay_file').files[0], 
+        nationality: document.getElementById('nationality').value,
+        education_level: document.getElementById('education_level').options[document.getElementById('education_level').selectedIndex].text
+    } 
+    console.log(data)
+    const response = await fetch('http://127.0.0.1:8000/delegate/', {
+      method: 'post',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(data)
+    });
+    console.log(data)
+    console.log('Completed!', response);
+  } catch(err) {
+    console.error(`Error: ${err}`);
+  }
+});
