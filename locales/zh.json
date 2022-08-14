@@ -7,6 +7,7 @@
     "advisory-panel": "指導委員會",
     "partnership": "海外夥伴",
     "past-conference": "歷屆回顧",
+    "brand-book": "品牌書",
     "gis2023": "GIS 2023",
     "annual-theme": "年度主題",
     "agenda": "會議時程",
@@ -632,6 +633,9 @@
   "partnership": {
     "title": "海外夥伴 | GIS Taiwan",
     "1": "海外夥伴"
+  },
+  "brand_book": {
+    "0": "品牌書"
   },
   "s_a": {
     "title": "學生大使 | GIS Taiwan",

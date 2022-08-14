@@ -129,6 +129,11 @@
                     >Past Conferences</a
                   >
                 </li>
+                <li>
+                  <a href="./brand-book.html" data-i18n="nav.brand-book"
+                    >Brand Book</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="menu-has-children">
@@ -157,13 +162,6 @@
                     href="./gis2023.html#academic_topics"
                     data-i18n="nav.academic-topic"
                     >Academic Topic</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="./gis2023.html#action_project"
-                    data-i18n="nav.action-poject"
-                    >Action Project</a
                   >
                 </li>
               </ul>
@@ -318,8 +316,6 @@
                   </tr>
                 </tbody>
               </table>
-              <h4 data-i18n="about_us.5">Brand Book</h4>
-              <div id="brand-book"></div>
             </div>
           </div>
         </div>
@@ -448,19 +444,5 @@
     <!-- Template Main Javascript File -->
     <script src="js/main.js"></script>
     <script src="js/about-us.js"></script>
-    <script src="/js/pdfobject.js"></script>
-    <script>
-      PDFObject.embed("/file/en.pdf", "#brand-book");
-      var brand_book = document.getElementById("brand-book").firstChild;
-      if (brand_book != null) {
-        if (current === 0) brand_book.src = "/file/en.pdf";
-        else brand_book.src = "/file/zh.pdf";
-      }
-    </script>
-    <style>
-      .pdfobject-container {
-        height: 25rem;
-      }
-    </style>
   </body>
 </html>
