@@ -274,3 +274,20 @@ button.addEventListener('click', async _ => {
     console.error(`Error: ${err}`);
   }
 });
+
+function styleselect() {
+    var value = $('#r_plan').val();
+    var div = $("#stylediv");
+    if (value == "4") {
+        div.html('<b>Group Registration for 5</b>');
+      }
+    if (value == "3") {
+      div.html('<b>Group Registration for 3</b>');
+    }
+    if (value == "2") {
+      div.html('');
+    }
+    if (value == "1") {
+      div.html('');
+    }
+  }
