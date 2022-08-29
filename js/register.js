@@ -233,6 +233,13 @@ file to your project folder
 
 // const button = document.getElementById('application');
 
+const button = document.getElementById('application');
+button.addEventListener('click', async () => {
+    var postData = new FormData(document.getElementById('post-delegate-form'));
+    for (var pair of postData.entries()) {
+        console.log(pair[0]+ ', ' + pair[1]); 
+    }
+})
 // button.addEventListener('click', async _ => {
 //   try {    
 //     var data = {
