@@ -236,9 +236,13 @@ file to your project folder
 const button = document.getElementById('application');
 button.addEventListener('click', async () => {
     var postData = new FormData(document.getElementById('post-delegate-form'));
-    for (var pair of postData.entries()) {
-        console.log(pair[0]+ ', ' + pair[1]); 
-    }
+    // for (var pair of postData.entries()) {
+    //     console.log(pair[0]+ ', ' + pair[1]); 
+    // }
+    // POST
+    var request = new XMLHttpRequest();
+    request.open("Post", "https://be.admin.gis-taiwan.ntu.edu.tw/delegate/");
+    request.send(postData);
 })
 // button.addEventListener('click', async _ => {
 //   try {    
