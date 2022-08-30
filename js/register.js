@@ -243,6 +243,7 @@ button.addEventListener('click', async () => {
     var request = new XMLHttpRequest();
     request.open("Post", "https://be.admin.gis-taiwan.ntu.edu.tw/delegate/");
     request.send(postData);
+    console.log(request.response)
 })
 // button.addEventListener('click', async _ => {
 //   try {    
