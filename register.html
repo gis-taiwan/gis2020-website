@@ -844,9 +844,10 @@
           </div>
         </div>
       </div>
-      
+      <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+
       <h3 class="text-center pt-3">Register</h3>
-      <form id="post-delegate-form" enctype="multipart/form-data">
+      <form target="dummyframe" id="post-delegate-form" enctype="multipart/form-data">
         <div class="container"> 
           <div class="row d-flex justify-content-center px-5 py-3">
             <h5 class="text-center">Registration Plan</h5>
@@ -881,7 +882,7 @@
                 <br>
                 <div class="checkbox">
                   <label>
-                    <input type="checkbox" id="termsAndConditions" name="term_condition" value="">
+                    <input type="checkbox" id="termsAndConditions" name="term_condition" required>
                     I agree to the GIS 2023 Terms and Conditions
                   </label>
                 </div>
@@ -902,18 +903,18 @@
                   <div class="row justify-content-start">
                     <div class="col">
                       <label>First name</label>
-                      <input type="text" class="form-control form-control-md" name="first_name"id="first_name" value=""/>
+                      <input type="text" class="form-control form-control-md" name="first_name"id="first_name" required/>
                     </div>
                     <div class="col">
                       <label>Last name</label>
-                      <input type="text" class="form-control form-control-md" id="last_name" name="last_name" value=""/>
+                      <input type="text" class="form-control form-control-md" id="last_name" name="last_name" required/>
                     </div>
                     <div class="small text-muted mt-2 text-center">Please make sure the name you fill in match the name on your passport</div>
                   </div>
                 </div>
                 <div class="col-4">
                   <label>Preferred Name</label>
-                  <input type="text" class="form-control form-control-md" id="preferred_name" name="prefer_name" value=""/>
+                  <input type="text" class="form-control form-control-md" id="preferred_name" name="prefer_name" required/>
                   <p class="small text-muted mt-2 text-center">Your preferred name will be printed on your name tag</p>
                 </div>
               </div>
@@ -921,12 +922,12 @@
               <div class="row justify-content-center mx-5 pb-5 px-5">
                 <div class="col-4">
                   <label>Date of Birth</label>
-                  <input type="date" class="form-control form-control-md" id="date_of_birth" name="date_of_birth" value=""/>
+                  <input type="date" class="form-control form-control-md" id="date_of_birth" name="date_of_birth" required/>
                 </div>
                 <div class="col-4">
                   <label>Sex</label>
-                  <select class="form-select" aria-label="Default select example" id="sex" name="sex" value="">
-                    <option selected>Sex</option>
+                  <select class="form-select" aria-label="Default select example" id="sex" name="sex" required>
+                    <!-- <option selected>Sex</option> -->
                     <option value="1">Male</option>
                     <option value="2">Female</option>
                     <option value="3">Others</option>
@@ -934,8 +935,8 @@
                 </div>
                 <div class="col-4">
                   <label>Preferred Gender Pronoun</label>
-                  <select class="form-select" aria-label="Default select example" id="prefer_gender" name="preferred_gender_pronoun" value="">
-                    <option selected>Preferred Gender Pronoun</option>
+                  <select class="form-select" aria-label="Default select example" id="prefer_gender" name="preferred_gender_pronoun" required>
+                    <!-- <option selected>Preferred Gender Pronoun</option> -->
                     <option value="1">He/Him</option>
                     <option value="2">She/Her</option>
                     <option value="3">They/Them</option>
@@ -960,12 +961,12 @@
               <div class="row justify-content-center mx-5 py-3 px-5">
                 <div class="col-4">
                   <label>Education Institute</label>
-                  <input type="text" class="form-control form-control-md" id="school" name="education_institution" value=""/>
+                  <input type="text" class="form-control form-control-md" id="school" name="education_institution" required/>
                 </div>
                 <div class="col-4">
                   <label>Education Level</label>
-                  <select class="form-select" aria-label="Education level" id="education_level" name="education_level" value="">
-                    <option selected>Education Level</option>
+                  <select class="form-select" aria-label="Education level" id="education_level" name="education_level" required>
+                    <!-- <option selected>Education Level</option> -->
                     <option value="1">High School</option>
                     <option value="2">Freshman</option>
                     <option value="3">Sophomore</option>
@@ -978,7 +979,7 @@
                 </div>
                 <div class="col-4">
                   <label>Major</label>
-                  <input type="text" class="form-control form-control-md" id="major" name="major" value=""/>
+                  <input type="text" class="form-control form-control-md" id="major" name="major" required/>
                 </div>
               </div>
               
@@ -986,8 +987,8 @@
                 <div class="col-6 px-5">
                   <div class="row align-items-center">
                     <label>Dietary Requirements</label>
-                    <select class="form-select" aria-label="Default select example" id="dietary_requirements" name="dietary_requirement" value="">
-                      <option selected>Dietary Requirements</option>
+                    <select class="form-select" aria-label="Default select example" id="dietary_requirements" name="dietary_requirement" required>
+                      <!-- <option selected>Dietary Requirements</option> -->
                       <option value="1">Non-vegetarian</option>
                       <option value="2">Vegetarian</option>
                       <option value="3">Ovo-Lacto Vegetarian</option>
@@ -1006,22 +1007,22 @@
               <div class="row justify-content-center py-2 mx-5 px-5">
                 <div class="col-6">
                   <label>Email Address</label>
-                  <input type="email" class="form-control form-control-md" id="email" name="email" value=""/>
+                  <input type="email" class="form-control form-control-md" id="email" name="email" required/>
                 </div>
                 <div class="col-6">
                   <label>Phone Number (with Country Code)</label>
-                  <input type="tel" class="form-control form-control-md" id="phone_num" name="phone_number" value="" />
+                  <input type="tel" class="form-control form-control-md" id="phone_num" name="phone_number" required />
                 </div>
               </div>
               
               <div class="row justify-content-center py-2 mx-5 px-5">
                 <div class="col-6">
                   <label>Mailing Address</label>
-                  <input type="text" class="form-control form-control-md" id="mailing_address" name="mail_address" value=""/>
+                  <input type="text" class="form-control form-control-md" id="mailing_address" name="mail_address" required/>
                 </div>
                 <div class="col-6">
                   <label>Personal Facebook Profile Link</label>
-                  <input type="url" class="form-control form-control-md" id="fb_link" name="facebook_link" value=""/>
+                  <input type="url" class="form-control form-control-md" id="fb_link" name="facebook_link" required/>
                 </div>
               </div>
 
@@ -1032,15 +1033,15 @@
               <div class="row justify-content-center py-2 mx-5 px-5">
                 <div class="col-4">
                   <label>Name</label>
-                  <input type="text" class="form-control form-control-md" id="ec_name" name="emergency_contact_name" value="" />
+                  <input type="text" class="form-control form-control-md" id="ec_name" name="emergency_contact_name" required />
                 </div>
                 <div class="col-4">
                   <label>Phone Number</label>
-                  <input type="tel" class="form-control form-control-md" id="ec_phoneNum" name="emergency_phone_number" value=""/>
+                  <input type="tel" class="form-control form-control-md" id="ec_phoneNum" name="emergency_phone_number" required/>
                 </div>
                 <div class="col-4">
                   <label>Relationship</label>
-                  <input type="tel" class="form-control form-control-md" id="ec_relationship" name="emergency_relation" value=""/>
+                  <input type="tel" class="form-control form-control-md" id="ec_relationship" name="emergency_relation" required/>
                 </div>
               </div>
 
@@ -1059,8 +1060,8 @@
               <div class="row justify-content-between py-2 mx-5 px-5">
                 <div class="col-6 px-5">
                   <label>First Choice</label>
-                  <select class="form-select" aria-label="Academic Choice" id="choice_1" name="first_choice">
-                    <option selected>Academic Topics</option>
+                  <select class="form-select" aria-label="Academic Choice" id="choice_1" name="first_choice" required>
+                    <!-- <option selected>Academic Topics</option> -->
                     <option value="1">Currency Remodeling</option>
                     <option value="2">New Paradigm of Healthcare</option>
                     <option value="3">Metaverse</option>
@@ -1069,8 +1070,8 @@
                 </div>
                 <div class="col-6 px-5">
                   <label>Second Choice</label>
-                  <select class="form-select" aria-label="Academic Choice" id="choice_2" name="second_choice">
-                    <option selected>Academic Topics</option>
+                  <select class="form-select" aria-label="Academic Choice" id="choice_2" name="second_choice" required>
+                    <!-- <option selected>Academic Topics</option> -->
                     <option value="1">Currency Remodeling</option>
                     <option value="2">New Paradigm of Healthcare</option>
                     <option value="3">Metaverse</option>
@@ -1082,8 +1083,8 @@
               <div class="row justify-content-between py-2 mx-5 px-5">
                 <div class="col-6 px-5">
                   <label>Third Choice</label>
-                  <select class="form-select" aria-label="Academic Choice" id="choice_3" name="third_choice">
-                    <option selected>Academic Topics</option>
+                  <select class="form-select" aria-label="Academic Choice" id="choice_3" name="third_choice" required>
+                    <!-- <option selected>Academic Topics</option> -->
                     <option value="1">Currency Remodeling</option>
                     <option value="2">New Paradigm of Healthcare</option>
                     <option value="3">Metaverse</option>
@@ -1092,8 +1093,8 @@
                 </div>
                 <div class="col-6 px-5">
                   <label>Fourth Choice</label>
-                  <select class="form-select" aria-label="Academic Choice" id="choice_4" name="fourth_choice">
-                    <option selected>Academic Topics</option>
+                  <select class="form-select" aria-label="Academic Choice" id="choice_4" name="fourth_choice" required>
+                    <!-- <option selected>Academic Topics</option> -->
                     <option value="1">Currency Remodeling</option>
                     <option value="2">New Paradigm of Healthcare</option>
                     <option value="3">Metaverse</option>
@@ -1136,7 +1137,7 @@
                   <br>
                   <div class="col-6 px-3">
                     <div class="row align-items-center">
-                      <input class="mx-10 form-control form-control-md" id="essay_file" name="essay_assignment" type="file" accept=".pdf" value="" />
+                      <input class="mx-10 form-control form-control-md" id="essay_file" name="essay_assignment" type="file" accept="application/pdf" required/>
                       <div class="small text-muted mt-2">Upload your essay assignment. Max file
                       size 5 MB</div>
                     </div>
@@ -1148,7 +1149,7 @@
               <hr class="mx-n3">
 
               <div class="text-center px-5 py-4">
-                <button type="button" class="btn btn-primary btn-lg" id="application">Send Application</button>
+                <button type="submit" class="btn btn-primary btn-lg" id="application">Send Application</button>
               </div>
 
             </div>
