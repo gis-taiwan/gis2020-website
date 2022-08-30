@@ -77,12 +77,12 @@ input[type="radio"] + label {
 }
 
 input[type="checkbox"] {
-  display: inline-flex;
+  display: inline-block;
 }
 
 
 a:hover {
-  color: yellow;
+  color: rgba(89,182,171,1);
 }
 
 /* input[type="checkbox"] + label {
@@ -133,6 +133,11 @@ a:hover {
   color: #0CE;
 }
 */
+
+label {
+  display: inline-block;
+  /* text-align: left !important; */
+}
 
 input[type="radio"] + label .fas {
   font-size: 1.3em;
