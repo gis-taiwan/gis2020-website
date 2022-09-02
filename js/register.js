@@ -252,8 +252,8 @@ button.addEventListener("click", async () => {
       else {
         alert(`Something went wrong, please double check your submission or contact us. Received status code ${this.status}, ${this.statusText}`)
       }
-    }
-  };
+    };
+  }
   request.onerror = function (event) {
     alert(`Something went wrong, server responded with: ${event.target.response}`);
   };
