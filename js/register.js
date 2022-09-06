@@ -242,20 +242,23 @@ button.addEventListener("click", async () => {
     return;
   }
   var request = new XMLHttpRequest();
-  request.open("Post", "https://be.admin.gis-taiwan.ntu.edu.tw/delegate/");
+  request.open("Post", "https://be.admin.dodofk.xyz/delegate/");
   request.onreadystatechange = function () {
-    if (this.readyState === 4){
+    if (this.readyState === 4) {
       if (this.status === 201) {
         alert("We have received your application.");
         window.location.href = "index.html";
+      } else {
+        alert(
+          `Something went wrong, please double check your submission or contact us. Received status code ${this.status}, ${this.statusText}`
+        );
       }
-      else {
-        alert(`Something went wrong, please double check your submission or contact us. Received status code ${this.status}, ${this.statusText}`)
-      }
-    };
-  }
+    }
+  };
   request.onerror = function (event) {
-    alert(`Something went wrong, server responded with: ${event.target.response}`);
+    alert(
+      `Something went wrong, server responded with: ${event.target.response}`
+    );
   };
   request.send(postData);
 });
