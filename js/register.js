@@ -242,7 +242,7 @@ button.addEventListener("click", async () => {
     return;
   }
   var request = new XMLHttpRequest();
-  request.open("Post", "https://be.admin.dodofk.xyz/delegate/");
+  request.open("Post", "https://be.admin.gis-taiwan.ntu.edu.tw/delegate/");
   request.onreadystatechange = function () {
     if (this.readyState === 4) {
       if (this.status === 201) {
