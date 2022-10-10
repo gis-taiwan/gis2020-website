@@ -510,9 +510,6 @@ $(document).ready(function () {
     var current = $("#register-list:nth-child(" + index + ")");
     var newtabid = "#tab" + index;
     var oldtabid = "#tab" + showindex;
-    //console.log(oldtabid);
-    //console.log(newtabid);
-    //console.log(oldtabid + " + label");
     $(oldtabid + " + label").removeClass("mylabel");
     $(oldtabid + " + label .fas").removeClass("myfas");
     $("#content" + showindex).removeClass("mycontent");
@@ -525,9 +522,6 @@ $(document).ready(function () {
     );
     var current = $("#register-list li:nth-child(" + index + ")");
     current.addClass("menu-active menu-item-active");
-    //console.log(current);
-    //console.log(index);
-    //console.log("#register-list:nth-child(" + index + ")");
   }
 
   var parser = document.createElement("a");
@@ -536,18 +530,15 @@ $(document).ready(function () {
   if (ori.includes("#tab")) {
     var idx = ori.substr(4);
     if (idx - "1" <= 4 && idx - "1" >= 0) {
-      //console.log(idx - '1');
       show(idx);
     }
   } else {
-    //console.log( "Nothing" );
     show("1");
   }
 
   $('input[id^="tab"]').click(function (event) {
     var ori = event.target.id;
     var idx = ori.substr(3);
-    //console.log(idx);
     show(idx);
   });
   // Start of registration guide
@@ -569,7 +560,6 @@ $(document).ready(function () {
         y: 0,
       },
     };
-    //console.log(idx,section.width);
     section.end = section.start + section.width;
     section.dot.x = section.start + section.width / 2;
     section.dot.y = section.height;
@@ -645,7 +635,6 @@ $(document).ready(function () {
 
     if (newSection !== currentSection) {
       currentSection = newSection;
-      //console.log(currentSection);
       last.removeClass("active");
       last = $(this);
     }
@@ -656,14 +645,9 @@ $(document).ready(function () {
   function init() {
     CANVAS_WIDTH = content1.width() - X_PADDING; // canvas is in container-fluid, so need to minus the padding
     X_PADDING = $(".setwidth").innerWidth() - $(".setwidth").width();
-    //console.log(X_PADDING);
-    //console.log(CANVAS_WIDTH);
-    //console.log(content1.width());
     $(".setwidth").outerWidth(CANVAS_WIDTH + X_PADDING); // because outerWidth contain the padding
     //$('.container-fluid').outerWidth(CANVAS_WIDTH + X_PADDING);
-    //console.log($('#mobile-step').width());
     canvas.width = CANVAS_WIDTH;
-    //console.log('resize',canvas.width);
 
     const a = (CANVAS_WIDTH / 12) * 2;
     const b = (CANVAS_WIDTH / 12) * 3;
@@ -800,7 +784,6 @@ async function nextPrev(n) {
       }
       jsonData.delegate.push(delegate);
     }
-    // console.log(jsonData);
     var request = new XMLHttpRequest();
     request.open(
       "Post",
@@ -950,27 +933,6 @@ function formCreate() {
                   class: "mx-n3",
                 }),
                 /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "text-center",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "h5",
-                    {
-                      class: "text-center",
-                    },
-                    "Pandemic Refund Related Information"
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "a",
-                    null,
-                    "Pandemic Refund Related Information"
-                  )
-                ),
-                /*#__PURE__*/ React.createElement("hr", {
-                  class: "mx-n3",
-                }),
-                /*#__PURE__*/ React.createElement(
                   "h5",
                   {
                     class: "text-center",
@@ -2002,27 +1964,6 @@ function formCreate() {
                   class: "mx-n3",
                 }),
                 /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "text-center",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "h5",
-                    {
-                      class: "text-center",
-                    },
-                    "Pandemic Refund Related Information"
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "a",
-                    null,
-                    "Pandemic Refund Related Information"
-                  )
-                ),
-                /*#__PURE__*/ React.createElement("hr", {
-                  class: "mx-n3",
-                }),
-                /*#__PURE__*/ React.createElement(
                   "h5",
                   {
                     class: "text-center",
@@ -3048,27 +2989,6 @@ function formCreate() {
                       }),
                       "I agree to the GIS 2023 Terms and Conditions"
                     )
-                  )
-                ),
-                /*#__PURE__*/ React.createElement("hr", {
-                  class: "mx-n3",
-                }),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "text-center",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "h5",
-                    {
-                      class: "text-center",
-                    },
-                    "Pandemic Refund Related Information"
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "a",
-                    null,
-                    "Pandemic Refund Related Information"
                   )
                 ),
                 /*#__PURE__*/ React.createElement("hr", {
@@ -4183,6 +4103,934 @@ function formCreate() {
                   class: "mx-n3",
                 }),
                 /*#__PURE__*/ React.createElement(
+                  "h5",
+                  {
+                    class: "text-center",
+                  },
+                  "Personal Information"
+                ),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "row justify-content-center mx-5 py-2 px-5",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-8",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "div",
+                      {
+                        class: "row justify-content-start",
+                      },
+                      /*#__PURE__*/ React.createElement(
+                        "div",
+                        {
+                          class: "col",
+                        },
+                        /*#__PURE__*/ React.createElement(
+                          "label",
+                          null,
+                          "First name"
+                        ),
+                        /*#__PURE__*/ React.createElement("input", {
+                          type: "text",
+                          class: "form-control form-control-md",
+                          name: "first_name",
+                          id: "first_name",
+                          placeholder: "e.g. Po-Chen",
+                          value: "",
+                          required: true,
+                        })
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "div",
+                        {
+                          class: "col",
+                        },
+                        /*#__PURE__*/ React.createElement(
+                          "label",
+                          null,
+                          "Last name"
+                        ),
+                        /*#__PURE__*/ React.createElement("input", {
+                          type: "text",
+                          class: "form-control form-control-md",
+                          id: "last_name",
+                          name: "last_name",
+                          placeholder: "e.g. Yeh",
+                          value: "",
+                          required: true,
+                        })
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "div",
+                        {
+                          class: "small text-muted mt-2 text-center",
+                        },
+                        "Please make sure the name you fill in match the name on your passport"
+                      )
+                    )
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-4",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Preferred Name"
+                    ),
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "text",
+                      class: "form-control form-control-md",
+                      id: "preferred_name",
+                      name: "prefer_name",
+                      placeholder: "e.g. Brandon Yeh",
+                      value: "",
+                      required: true,
+                    }),
+                    /*#__PURE__*/ React.createElement(
+                      "p",
+                      {
+                        class: "small text-muted mt-2 text-center",
+                      },
+                      "Your preferred name will be printed on your name tag"
+                    )
+                  )
+                ),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "row justify-content-center mx-5 pb-5 px-5",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-4",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Date of Birth"
+                    ),
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "date",
+                      class: "form-control form-control-md",
+                      id: "date_of_birth",
+                      name: "date_of_birth",
+                      value: "",
+                      required: true,
+                    })
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-4",
+                    },
+                    /*#__PURE__*/ React.createElement("label", null, "Sex"),
+                    /*#__PURE__*/ React.createElement(
+                      "select",
+                      {
+                        class: "form-select",
+                        "aria-label": "Default select example",
+                        id: "sex",
+                        name: "sex",
+                        value: "",
+                        required: true,
+                      },
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Male",
+                        },
+                        "Male"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Female",
+                        },
+                        "Female"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Others",
+                        },
+                        "Others"
+                      )
+                    )
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-4",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Preferred Gender Pronoun"
+                    ),
+                    /*#__PURE__*/ React.createElement(
+                      "select",
+                      {
+                        class: "form-select",
+                        "aria-label": "Default select example",
+                        id: "prefer_gender",
+                        name: "prefer_gender",
+                        value: "",
+                        required: true,
+                      },
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "He/Him",
+                        },
+                        "He/Him"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "She/Her",
+                        },
+                        "She/Her"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "They/Them",
+                        },
+                        "They/Them"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Others",
+                        },
+                        "Others"
+                      )
+                    )
+                  )
+                ),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "row justify-content-center py-2 mx-5 px-5",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-6",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Nationality"
+                    ),
+                    /*#__PURE__*/ React.createElement("div", {
+                      "w3-include-html": "nationality.html",
+                    })
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-6",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "2nd Nationality"
+                    ),
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "text",
+                      class: "form-control form-control-md",
+                      id: "nationality2",
+                      placeholder: "Optional",
+                      name: "nationality_2",
+                      value: "",
+                    })
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "p",
+                    {
+                      class: "small text-muted mt-2 text-center",
+                    },
+                    "Please disclose if you have dual citizenship"
+                  )
+                ),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "row justify-content-center mx-5 py-3 px-5",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-4",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Education Institute"
+                    ),
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "text",
+                      class: "form-control form-control-md",
+                      id: "school",
+                      name: "education_institution",
+                      value: "",
+                      required: true,
+                    })
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-4",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Education Level"
+                    ),
+                    /*#__PURE__*/ React.createElement(
+                      "select",
+                      {
+                        class: "form-select",
+                        "aria-label": "Education level",
+                        id: "education_level",
+                        name: "education_level",
+                        value: "",
+                        required: true,
+                      },
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "High School",
+                        },
+                        "High School"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Freshman",
+                        },
+                        "Freshman"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Sophomore",
+                        },
+                        "Sophomore"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Junior",
+                        },
+                        "Junior"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Senior",
+                        },
+                        "Senior"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Fifth (or more) year of College",
+                        },
+                        "Fifth (or more) year of College"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Graduate",
+                        },
+                        "Graduate"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "PhD",
+                        },
+                        "PhD"
+                      )
+                    )
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-4",
+                    },
+                    /*#__PURE__*/ React.createElement("label", null, "Major"),
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "text",
+                      class: "form-control form-control-md",
+                      id: "major",
+                      name: "major",
+                      value: "",
+                      required: true,
+                    })
+                  )
+                ),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "row d-flex justify-content-center px-5 py-4",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-6 px-5",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "div",
+                      {
+                        class: "row align-items-center",
+                      },
+                      /*#__PURE__*/ React.createElement(
+                        "label",
+                        null,
+                        "Dietary Requirements"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "select",
+                        {
+                          class: "form-select",
+                          "aria-label": "Default select example",
+                          id: "dietary_requirements",
+                          name: "dietary_requirement",
+                          value: "",
+                          required: true,
+                        },
+                        /*#__PURE__*/ React.createElement(
+                          "option",
+                          {
+                            value: "Non-vegetarian",
+                          },
+                          "Non-vegetarian"
+                        ),
+                        /*#__PURE__*/ React.createElement(
+                          "option",
+                          {
+                            value: "Vegetarian",
+                          },
+                          "Vegetarian"
+                        ),
+                        /*#__PURE__*/ React.createElement(
+                          "option",
+                          {
+                            value: "Ovo-Lacto Vegetarian",
+                          },
+                          "Ovo-Lacto Vegetarian"
+                        ),
+                        /*#__PURE__*/ React.createElement(
+                          "option",
+                          {
+                            value: "Vegan",
+                          },
+                          "Vegan"
+                        ),
+                        /*#__PURE__*/ React.createElement(
+                          "option",
+                          {
+                            value: "Pork-free",
+                          },
+                          "Pork-free"
+                        ),
+                        /*#__PURE__*/ React.createElement(
+                          "option",
+                          {
+                            value: "Beef-free",
+                          },
+                          "Beef-free"
+                        )
+                      )
+                    )
+                  )
+                ),
+                /*#__PURE__*/ React.createElement("hr", {
+                  class: "mx-n3",
+                }),
+                /*#__PURE__*/ React.createElement(
+                  "h5",
+                  {
+                    class: "text-center",
+                  },
+                  "Contact Information"
+                ),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "row justify-content-center py-2 mx-5 px-5",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-6",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Email Address"
+                    ),
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "email",
+                      class: "form-control form-control-md",
+                      id: "email",
+                      name: "email",
+                      value: "",
+                      required: true,
+                    })
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-6",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Phone Number (with Country Code)"
+                    ),
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "tel",
+                      class: "form-control form-control-md",
+                      id: "phone_num",
+                      name: "phone_number",
+                      placeholder: "e.g. (+886)#########",
+                      value: "",
+                      required: true,
+                    })
+                  )
+                ),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "row justify-content-center py-2 mx-5 px-5",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-6",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Mailing Address"
+                    ),
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "text",
+                      class: "form-control form-control-md",
+                      id: "mailing_address",
+                      placeholder:
+                        "e.g. No. 1, Sec. 4, Roosevelt Rd., Taipei 10617, Taiwan (R.O.C.).",
+                      name: "mail_address",
+                      value: "",
+                      required: true,
+                    })
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-6",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Personal Facebook Profile Link"
+                    ),
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "url",
+                      class: "form-control form-control-md",
+                      id: "fb_link",
+                      name: "facebook_link",
+                      value: "",
+                      required: true,
+                    })
+                  )
+                ),
+                /*#__PURE__*/ React.createElement("hr", {
+                  class: "mx-n3",
+                }),
+                /*#__PURE__*/ React.createElement(
+                  "h5",
+                  {
+                    class: "text-center",
+                  },
+                  "Emergency Contact"
+                ),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "row justify-content-center py-2 mx-5 px-5",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-4 col-sm-3",
+                    },
+                    /*#__PURE__*/ React.createElement("label", null, "Name"),
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "text",
+                      class: "form-control form-control-md",
+                      id: "ec_name",
+                      name: "emergency_contact_name",
+                      value: "",
+                      required: true,
+                    })
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-4 col-sm-3",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Phone Number"
+                    ),
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "tel",
+                      class: "form-control form-control-md",
+                      id: "ec_phoneNum",
+                      name: "emergency_phone_number",
+                      value: "",
+                      required: true,
+                    })
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-4 col-sm-3",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Relationship"
+                    ),
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "text",
+                      class: "form-control form-control-md",
+                      id: "ec_relationship",
+                      name: "emergency_relation",
+                      value: "",
+                      required: true,
+                    })
+                  )
+                ),
+                /*#__PURE__*/ React.createElement("hr", {
+                  class: "mx-n3",
+                }),
+                /*#__PURE__*/ React.createElement(
+                  "h5",
+                  {
+                    class: "text-center",
+                  },
+                  "Accommodation"
+                ),
+                /*#__PURE__*/ React.createElement(
+                  "p",
+                  {
+                    class: "text-center",
+                  },
+                  "GIS Taiwan 2023 is planning on providing accommodation for confirmed delegates. ",
+                  /*#__PURE__*/ React.createElement("br", null),
+                  " Further information will be provided after the applicants has been confirmed."
+                ),
+                /*#__PURE__*/ React.createElement("hr", {
+                  class: "mx-n3",
+                }),
+                /*#__PURE__*/ React.createElement(
+                  "h5",
+                  {
+                    class: "text-center",
+                  },
+                  "Academic Topic/Impact Project Choice"
+                ),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "row justify-content-between py-2 mx-5 px-5",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-6 px-5",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "First Choice"
+                    ),
+                    /*#__PURE__*/ React.createElement(
+                      "select",
+                      {
+                        class: "form-select",
+                        "aria-label": "Academic Choice",
+                        id: "choice_1",
+                        name: "first_choice",
+                        value: "",
+                        required: true,
+                      },
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Currency Remodeling",
+                        },
+                        "Currency Remodeling"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "New Paradigm of Healthcare",
+                        },
+                        "New Paradigm of Healthcare"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Metaverse",
+                        },
+                        "Metaverse"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Energy Reform",
+                        },
+                        "Energy Reform"
+                      )
+                    )
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-6 px-5",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Second Choice"
+                    ),
+                    /*#__PURE__*/ React.createElement(
+                      "select",
+                      {
+                        class: "form-select",
+                        "aria-label": "Academic Choice",
+                        id: "choice_2",
+                        name: "second_choice",
+                        value: "",
+                        required: true,
+                      },
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Currency Remodeling",
+                        },
+                        "Currency Remodeling"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "New Paradigm of Healthcare",
+                        },
+                        "New Paradigm of Healthcare"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Metaverse",
+                        },
+                        "Metaverse"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Energy Reform",
+                        },
+                        "Energy Reform"
+                      )
+                    )
+                  )
+                ),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "row justify-content-between py-2 mx-5 px-5",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-6 px-5",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Third Choice"
+                    ),
+                    /*#__PURE__*/ React.createElement(
+                      "select",
+                      {
+                        class: "form-select",
+                        "aria-label": "Academic Choice",
+                        id: "choice_3",
+                        name: "third_choice",
+                        value: "",
+                        required: true,
+                      },
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Currency Remodeling",
+                        },
+                        "Currency Remodeling"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "New Paradigm of Healthcare",
+                        },
+                        "New Paradigm of Healthcare"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Metaverse",
+                        },
+                        "Metaverse"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Energy Reform",
+                        },
+                        "Energy Reform"
+                      )
+                    )
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-6 px-5",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Fourth Choice"
+                    ),
+                    /*#__PURE__*/ React.createElement(
+                      "select",
+                      {
+                        class: "form-select",
+                        "aria-label": "Academic Choice",
+                        id: "choice_4",
+                        name: "fourth_choice",
+                        value: "",
+                        required: true,
+                      },
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Currency Remodeling",
+                        },
+                        "Currency Remodeling"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "New Paradigm of Healthcare",
+                        },
+                        "New Paradigm of Healthcare"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Metaverse",
+                        },
+                        "Metaverse"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Energy Reform",
+                        },
+                        "Energy Reform"
+                      )
+                    )
+                  )
+                ),
+                /*#__PURE__*/ React.createElement("hr", {
+                  class: "mx-n3",
+                }),
+                /*#__PURE__*/ React.createElement(
+                  "h5",
+                  {
+                    class: "text-center",
+                  },
+                  "Panel Discussion"
+                ),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "row justify-content-center py-2 mx-5 px-5",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "p",
+                    {
+                      class: "text-left",
+                    },
+                    "In Panel discussion, we will invite keynote speakers along with an moderator to discuss on the academic topic from different perspectives. ",
+                    /*#__PURE__*/ React.createElement("br", null),
+                    "This year, we would like to invite one volunteer student panelist to join this session.He/She would have the opportunity to directly converse with the other three panelists and share his/her views on the topic. ",
+                    /*#__PURE__*/ React.createElement("br", null),
+                    "If you are interested in the position, please check the box below. We will have further interview assessment provided after your essay assessment has been approved."
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "row justify-content-center px-3 mx-5",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "div",
+                      {
+                        class: "col-lg-5 col-md-4 col-10",
+                      },
+                      /*#__PURE__*/ React.createElement("img", {
+                        src: "img/pd.jpg",
+                        class: "img-fluid",
+                        alt: "",
+                      })
+                    )
+                  )
+                ),
+                /*#__PURE__*/ React.createElement("br", null),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "text-center",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "label",
+                    null,
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "checkbox",
+                      id: "panel_discussion",
+                      name: "panel_discussion",
+                    }),
+                    "I would like to particpate in the panel discussion as a student representative"
+                  )
+                ),
+                /*#__PURE__*/ React.createElement("hr", {
+                  class: "mx-n3",
+                }),
+                /*#__PURE__*/ React.createElement(
                   "div",
                   {
                     class: "text-center",
@@ -4192,12 +5040,1128 @@ function formCreate() {
                     {
                       class: "text-center",
                     },
-                    "Pandemic Refund Related Information"
+                    "Essay Assignment"
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "row d-flex justify-content-center px-5",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "a",
+                      {
+                        href: "https://docs.google.com/document/d/19aSNlrdMgv_UyHP6TMTGNnYhFbcBYHnf-TWpkRcteh8/edit?usp=sharing",
+                        target: "_blank",
+                      },
+                      "Essay Questions"
+                    ),
+                    /*#__PURE__*/ React.createElement("br", null),
+                    /*#__PURE__*/ React.createElement("br", null),
+                    /*#__PURE__*/ React.createElement(
+                      "div",
+                      {
+                        class: "col-6 px-3",
+                      },
+                      /*#__PURE__*/ React.createElement(
+                        "div",
+                        {
+                          class: "row align-items-center",
+                        },
+                        /*#__PURE__*/ React.createElement("input", {
+                          class: "mx-10 form-control form-control-md",
+                          id: "essay_file",
+                          name: "essay_assignment",
+                          type: "file",
+                          accept: "application/pdf",
+                          required: true,
+                        }),
+                        /*#__PURE__*/ React.createElement(
+                          "div",
+                          {
+                            class: "small text-muted mt-2",
+                          },
+                          "Upload your essay assignment. Max file size 5 MB"
+                        )
+                      )
+                    )
+                  )
+                )
+              ),
+              /*#__PURE__*/ React.createElement(
+                "div",
+                {
+                  class: "card-body tab",
+                },
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "text-center",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "h5",
+                    null,
+                    "Terms & Conditions"
                   ),
                   /*#__PURE__*/ React.createElement(
                     "a",
+                    {
+                      href: "https://docs.google.com/document/d/17o85FQiWOJ4aeLvuTPNMXWcQRQSxdI7al2z3TVOZgq8/edit#",
+                      target: "_blank",
+                    },
+                    "Terms & Conditions"
+                  ),
+                  /*#__PURE__*/ React.createElement("br", null),
+                  /*#__PURE__*/ React.createElement("br", null),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "checkbox",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      /*#__PURE__*/ React.createElement("input", {
+                        type: "checkbox",
+                        id: "termsAndConditions",
+                        name: "term_condition",
+                        required: true,
+                      }),
+                      "I agree to the GIS 2023 Terms and Conditions"
+                    )
+                  )
+                ),
+                /*#__PURE__*/ React.createElement("hr", {
+                  class: "mx-n3",
+                }),
+                /*#__PURE__*/ React.createElement("hr", {
+                  class: "mx-n3",
+                }),
+                /*#__PURE__*/ React.createElement(
+                  "h5",
+                  {
+                    class: "text-center",
+                  },
+                  "Personal Information"
+                ),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "row justify-content-center mx-5 py-2 px-5",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-8",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "div",
+                      {
+                        class: "row justify-content-start",
+                      },
+                      /*#__PURE__*/ React.createElement(
+                        "div",
+                        {
+                          class: "col",
+                        },
+                        /*#__PURE__*/ React.createElement(
+                          "label",
+                          null,
+                          "First name"
+                        ),
+                        /*#__PURE__*/ React.createElement("input", {
+                          type: "text",
+                          class: "form-control form-control-md",
+                          name: "first_name",
+                          id: "first_name",
+                          placeholder: "e.g. Po-Chen",
+                          value: "",
+                          required: true,
+                        })
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "div",
+                        {
+                          class: "col",
+                        },
+                        /*#__PURE__*/ React.createElement(
+                          "label",
+                          null,
+                          "Last name"
+                        ),
+                        /*#__PURE__*/ React.createElement("input", {
+                          type: "text",
+                          class: "form-control form-control-md",
+                          id: "last_name",
+                          name: "last_name",
+                          placeholder: "e.g. Yeh",
+                          value: "",
+                          required: true,
+                        })
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "div",
+                        {
+                          class: "small text-muted mt-2 text-center",
+                        },
+                        "Please make sure the name you fill in match the name on your passport"
+                      )
+                    )
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-4",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Preferred Name"
+                    ),
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "text",
+                      class: "form-control form-control-md",
+                      id: "preferred_name",
+                      name: "prefer_name",
+                      placeholder: "e.g. Brandon Yeh",
+                      value: "",
+                      required: true,
+                    }),
+                    /*#__PURE__*/ React.createElement(
+                      "p",
+                      {
+                        class: "small text-muted mt-2 text-center",
+                      },
+                      "Your preferred name will be printed on your name tag"
+                    )
+                  )
+                ),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "row justify-content-center mx-5 pb-5 px-5",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-4",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Date of Birth"
+                    ),
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "date",
+                      class: "form-control form-control-md",
+                      id: "date_of_birth",
+                      name: "date_of_birth",
+                      value: "",
+                      required: true,
+                    })
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-4",
+                    },
+                    /*#__PURE__*/ React.createElement("label", null, "Sex"),
+                    /*#__PURE__*/ React.createElement(
+                      "select",
+                      {
+                        class: "form-select",
+                        "aria-label": "Default select example",
+                        id: "sex",
+                        name: "sex",
+                        value: "",
+                        required: true,
+                      },
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Male",
+                        },
+                        "Male"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Female",
+                        },
+                        "Female"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Others",
+                        },
+                        "Others"
+                      )
+                    )
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-4",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Preferred Gender Pronoun"
+                    ),
+                    /*#__PURE__*/ React.createElement(
+                      "select",
+                      {
+                        class: "form-select",
+                        "aria-label": "Default select example",
+                        id: "prefer_gender",
+                        name: "prefer_gender",
+                        value: "",
+                        required: true,
+                      },
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "He/Him",
+                        },
+                        "He/Him"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "She/Her",
+                        },
+                        "She/Her"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "They/Them",
+                        },
+                        "They/Them"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Others",
+                        },
+                        "Others"
+                      )
+                    )
+                  )
+                ),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "row justify-content-center py-2 mx-5 px-5",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-6",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Nationality"
+                    ),
+                    /*#__PURE__*/ React.createElement("div", {
+                      "w3-include-html": "nationality.html",
+                    })
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-6",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "2nd Nationality"
+                    ),
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "text",
+                      class: "form-control form-control-md",
+                      id: "nationality2",
+                      placeholder: "Optional",
+                      name: "nationality_2",
+                      value: "",
+                    })
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "p",
+                    {
+                      class: "small text-muted mt-2 text-center",
+                    },
+                    "Please disclose if you have dual citizenship"
+                  )
+                ),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "row justify-content-center mx-5 py-3 px-5",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-4",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Education Institute"
+                    ),
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "text",
+                      class: "form-control form-control-md",
+                      id: "school",
+                      name: "education_institution",
+                      value: "",
+                      required: true,
+                    })
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-4",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Education Level"
+                    ),
+                    /*#__PURE__*/ React.createElement(
+                      "select",
+                      {
+                        class: "form-select",
+                        "aria-label": "Education level",
+                        id: "education_level",
+                        name: "education_level",
+                        value: "",
+                        required: true,
+                      },
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "High School",
+                        },
+                        "High School"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Freshman",
+                        },
+                        "Freshman"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Sophomore",
+                        },
+                        "Sophomore"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Junior",
+                        },
+                        "Junior"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Senior",
+                        },
+                        "Senior"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Fifth (or more) year of College",
+                        },
+                        "Fifth (or more) year of College"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Graduate",
+                        },
+                        "Graduate"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "PhD",
+                        },
+                        "PhD"
+                      )
+                    )
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-4",
+                    },
+                    /*#__PURE__*/ React.createElement("label", null, "Major"),
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "text",
+                      class: "form-control form-control-md",
+                      id: "major",
+                      name: "major",
+                      value: "",
+                      required: true,
+                    })
+                  )
+                ),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "row d-flex justify-content-center px-5 py-4",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-6 px-5",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "div",
+                      {
+                        class: "row align-items-center",
+                      },
+                      /*#__PURE__*/ React.createElement(
+                        "label",
+                        null,
+                        "Dietary Requirements"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "select",
+                        {
+                          class: "form-select",
+                          "aria-label": "Default select example",
+                          id: "dietary_requirements",
+                          name: "dietary_requirement",
+                          value: "",
+                          required: true,
+                        },
+                        /*#__PURE__*/ React.createElement(
+                          "option",
+                          {
+                            value: "Non-vegetarian",
+                          },
+                          "Non-vegetarian"
+                        ),
+                        /*#__PURE__*/ React.createElement(
+                          "option",
+                          {
+                            value: "Vegetarian",
+                          },
+                          "Vegetarian"
+                        ),
+                        /*#__PURE__*/ React.createElement(
+                          "option",
+                          {
+                            value: "Ovo-Lacto Vegetarian",
+                          },
+                          "Ovo-Lacto Vegetarian"
+                        ),
+                        /*#__PURE__*/ React.createElement(
+                          "option",
+                          {
+                            value: "Vegan",
+                          },
+                          "Vegan"
+                        ),
+                        /*#__PURE__*/ React.createElement(
+                          "option",
+                          {
+                            value: "Pork-free",
+                          },
+                          "Pork-free"
+                        ),
+                        /*#__PURE__*/ React.createElement(
+                          "option",
+                          {
+                            value: "Beef-free",
+                          },
+                          "Beef-free"
+                        )
+                      )
+                    )
+                  )
+                ),
+                /*#__PURE__*/ React.createElement("hr", {
+                  class: "mx-n3",
+                }),
+                /*#__PURE__*/ React.createElement(
+                  "h5",
+                  {
+                    class: "text-center",
+                  },
+                  "Contact Information"
+                ),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "row justify-content-center py-2 mx-5 px-5",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-6",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Email Address"
+                    ),
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "email",
+                      class: "form-control form-control-md",
+                      id: "email",
+                      name: "email",
+                      value: "",
+                      required: true,
+                    })
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-6",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Phone Number (with Country Code)"
+                    ),
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "tel",
+                      class: "form-control form-control-md",
+                      id: "phone_num",
+                      name: "phone_number",
+                      placeholder: "e.g. (+886)#########",
+                      value: "",
+                      required: true,
+                    })
+                  )
+                ),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "row justify-content-center py-2 mx-5 px-5",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-6",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Mailing Address"
+                    ),
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "text",
+                      class: "form-control form-control-md",
+                      id: "mailing_address",
+                      placeholder:
+                        "e.g. No. 1, Sec. 4, Roosevelt Rd., Taipei 10617, Taiwan (R.O.C.).",
+                      name: "mail_address",
+                      value: "",
+                      required: true,
+                    })
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-6",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Personal Facebook Profile Link"
+                    ),
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "url",
+                      class: "form-control form-control-md",
+                      id: "fb_link",
+                      name: "facebook_link",
+                      value: "",
+                      required: true,
+                    })
+                  )
+                ),
+                /*#__PURE__*/ React.createElement("hr", {
+                  class: "mx-n3",
+                }),
+                /*#__PURE__*/ React.createElement(
+                  "h5",
+                  {
+                    class: "text-center",
+                  },
+                  "Emergency Contact"
+                ),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "row justify-content-center py-2 mx-5 px-5",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-4 col-sm-3",
+                    },
+                    /*#__PURE__*/ React.createElement("label", null, "Name"),
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "text",
+                      class: "form-control form-control-md",
+                      id: "ec_name",
+                      name: "emergency_contact_name",
+                      value: "",
+                      required: true,
+                    })
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-4 col-sm-3",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Phone Number"
+                    ),
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "tel",
+                      class: "form-control form-control-md",
+                      id: "ec_phoneNum",
+                      name: "emergency_phone_number",
+                      value: "",
+                      required: true,
+                    })
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-4 col-sm-3",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Relationship"
+                    ),
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "text",
+                      class: "form-control form-control-md",
+                      id: "ec_relationship",
+                      name: "emergency_relation",
+                      value: "",
+                      required: true,
+                    })
+                  )
+                ),
+                /*#__PURE__*/ React.createElement("hr", {
+                  class: "mx-n3",
+                }),
+                /*#__PURE__*/ React.createElement(
+                  "h5",
+                  {
+                    class: "text-center",
+                  },
+                  "Accommodation"
+                ),
+                /*#__PURE__*/ React.createElement(
+                  "p",
+                  {
+                    class: "text-center",
+                  },
+                  "GIS Taiwan 2023 is planning on providing accommodation for confirmed delegates. ",
+                  /*#__PURE__*/ React.createElement("br", null),
+                  " Further information will be provided after the applicants has been confirmed."
+                ),
+                /*#__PURE__*/ React.createElement("hr", {
+                  class: "mx-n3",
+                }),
+                /*#__PURE__*/ React.createElement(
+                  "h5",
+                  {
+                    class: "text-center",
+                  },
+                  "Academic Topic/Impact Project Choice"
+                ),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "row justify-content-between py-2 mx-5 px-5",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-6 px-5",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "First Choice"
+                    ),
+                    /*#__PURE__*/ React.createElement(
+                      "select",
+                      {
+                        class: "form-select",
+                        "aria-label": "Academic Choice",
+                        id: "choice_1",
+                        name: "first_choice",
+                        value: "",
+                        required: true,
+                      },
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Currency Remodeling",
+                        },
+                        "Currency Remodeling"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "New Paradigm of Healthcare",
+                        },
+                        "New Paradigm of Healthcare"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Metaverse",
+                        },
+                        "Metaverse"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Energy Reform",
+                        },
+                        "Energy Reform"
+                      )
+                    )
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-6 px-5",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Second Choice"
+                    ),
+                    /*#__PURE__*/ React.createElement(
+                      "select",
+                      {
+                        class: "form-select",
+                        "aria-label": "Academic Choice",
+                        id: "choice_2",
+                        name: "second_choice",
+                        value: "",
+                        required: true,
+                      },
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Currency Remodeling",
+                        },
+                        "Currency Remodeling"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "New Paradigm of Healthcare",
+                        },
+                        "New Paradigm of Healthcare"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Metaverse",
+                        },
+                        "Metaverse"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Energy Reform",
+                        },
+                        "Energy Reform"
+                      )
+                    )
+                  )
+                ),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "row justify-content-between py-2 mx-5 px-5",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-6 px-5",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Third Choice"
+                    ),
+                    /*#__PURE__*/ React.createElement(
+                      "select",
+                      {
+                        class: "form-select",
+                        "aria-label": "Academic Choice",
+                        id: "choice_3",
+                        name: "third_choice",
+                        value: "",
+                        required: true,
+                      },
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Currency Remodeling",
+                        },
+                        "Currency Remodeling"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "New Paradigm of Healthcare",
+                        },
+                        "New Paradigm of Healthcare"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Metaverse",
+                        },
+                        "Metaverse"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Energy Reform",
+                        },
+                        "Energy Reform"
+                      )
+                    )
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "col-6 px-5",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      "Fourth Choice"
+                    ),
+                    /*#__PURE__*/ React.createElement(
+                      "select",
+                      {
+                        class: "form-select",
+                        "aria-label": "Academic Choice",
+                        id: "choice_4",
+                        name: "fourth_choice",
+                        value: "",
+                        required: true,
+                      },
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Currency Remodeling",
+                        },
+                        "Currency Remodeling"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "New Paradigm of Healthcare",
+                        },
+                        "New Paradigm of Healthcare"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Metaverse",
+                        },
+                        "Metaverse"
+                      ),
+                      /*#__PURE__*/ React.createElement(
+                        "option",
+                        {
+                          value: "Energy Reform",
+                        },
+                        "Energy Reform"
+                      )
+                    )
+                  )
+                ),
+                /*#__PURE__*/ React.createElement("hr", {
+                  class: "mx-n3",
+                }),
+                /*#__PURE__*/ React.createElement(
+                  "h5",
+                  {
+                    class: "text-center",
+                  },
+                  "Panel Discussion"
+                ),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "row justify-content-center py-2 mx-5 px-5",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "p",
+                    {
+                      class: "text-left",
+                    },
+                    "In Panel discussion, we will invite keynote speakers along with an moderator to discuss on the academic topic from different perspectives. ",
+                    /*#__PURE__*/ React.createElement("br", null),
+                    "This year, we would like to invite one volunteer student panelist to join this session.He/She would have the opportunity to directly converse with the other three panelists and share his/her views on the topic. ",
+                    /*#__PURE__*/ React.createElement("br", null),
+                    "If you are interested in the position, please check the box below. We will have further interview assessment provided after your essay assessment has been approved."
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "row justify-content-center px-3 mx-5",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "div",
+                      {
+                        class: "col-lg-5 col-md-4 col-10",
+                      },
+                      /*#__PURE__*/ React.createElement("img", {
+                        src: "img/pd.jpg",
+                        class: "img-fluid",
+                        alt: "",
+                      })
+                    )
+                  )
+                ),
+                /*#__PURE__*/ React.createElement("br", null),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "text-center",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "label",
                     null,
-                    "Pandemic Refund Related Information"
+                    /*#__PURE__*/ React.createElement("input", {
+                      type: "checkbox",
+                      id: "panel_discussion",
+                      name: "panel_discussion",
+                    }),
+                    "I would like to particpate in the panel discussion as a student representative"
+                  )
+                ),
+                /*#__PURE__*/ React.createElement("hr", {
+                  class: "mx-n3",
+                }),
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "text-center",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "h5",
+                    {
+                      class: "text-center",
+                    },
+                    "Essay Assignment"
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "row d-flex justify-content-center px-5",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "a",
+                      {
+                        href: "https://docs.google.com/document/d/19aSNlrdMgv_UyHP6TMTGNnYhFbcBYHnf-TWpkRcteh8/edit?usp=sharing",
+                        target: "_blank",
+                      },
+                      "Essay Questions"
+                    ),
+                    /*#__PURE__*/ React.createElement("br", null),
+                    /*#__PURE__*/ React.createElement("br", null),
+                    /*#__PURE__*/ React.createElement(
+                      "div",
+                      {
+                        class: "col-6 px-3",
+                      },
+                      /*#__PURE__*/ React.createElement(
+                        "div",
+                        {
+                          class: "row align-items-center",
+                        },
+                        /*#__PURE__*/ React.createElement("input", {
+                          class: "mx-10 form-control form-control-md",
+                          id: "essay_file",
+                          name: "essay_assignment",
+                          type: "file",
+                          accept: "application/pdf",
+                          required: true,
+                        }),
+                        /*#__PURE__*/ React.createElement(
+                          "div",
+                          {
+                            class: "small text-muted mt-2",
+                          },
+                          "Upload your essay assignment. Max file size 5 MB"
+                        )
+                      )
+                    )
+                  )
+                )
+              ),
+              /*#__PURE__*/ React.createElement(
+                "div",
+                {
+                  class: "card-body tab",
+                },
+                /*#__PURE__*/ React.createElement(
+                  "div",
+                  {
+                    class: "text-center",
+                  },
+                  /*#__PURE__*/ React.createElement(
+                    "h5",
+                    null,
+                    "Terms & Conditions"
+                  ),
+                  /*#__PURE__*/ React.createElement(
+                    "a",
+                    {
+                      href: "https://docs.google.com/document/d/17o85FQiWOJ4aeLvuTPNMXWcQRQSxdI7al2z3TVOZgq8/edit#",
+                      target: "_blank",
+                    },
+                    "Terms & Conditions"
+                  ),
+                  /*#__PURE__*/ React.createElement("br", null),
+                  /*#__PURE__*/ React.createElement("br", null),
+                  /*#__PURE__*/ React.createElement(
+                    "div",
+                    {
+                      class: "checkbox",
+                    },
+                    /*#__PURE__*/ React.createElement(
+                      "label",
+                      null,
+                      /*#__PURE__*/ React.createElement("input", {
+                        type: "checkbox",
+                        id: "termsAndConditions",
+                        name: "term_condition",
+                        required: true,
+                      }),
+                      "I agree to the GIS 2023 Terms and Conditions"
+                    )
                   )
                 ),
                 /*#__PURE__*/ React.createElement("hr", {
@@ -5235,27 +7199,6 @@ function formCreate() {
                   class: "mx-n3",
                 }),
                 /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "text-center",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "h5",
-                    {
-                      class: "text-center",
-                    },
-                    "Pandemic Refund Related Information"
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "a",
-                    null,
-                    "Pandemic Refund Related Information"
-                  )
-                ),
-                /*#__PURE__*/ React.createElement("hr", {
-                  class: "mx-n3",
-                }),
-                /*#__PURE__*/ React.createElement(
                   "h5",
                   {
                     class: "text-center",
@@ -6281,2131 +8224,6 @@ function formCreate() {
                       }),
                       "I agree to the GIS 2023 Terms and Conditions"
                     )
-                  )
-                ),
-                /*#__PURE__*/ React.createElement("hr", {
-                  class: "mx-n3",
-                }),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "text-center",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "h5",
-                    {
-                      class: "text-center",
-                    },
-                    "Pandemic Refund Related Information"
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "a",
-                    null,
-                    "Pandemic Refund Related Information"
-                  )
-                ),
-                /*#__PURE__*/ React.createElement("hr", {
-                  class: "mx-n3",
-                }),
-                /*#__PURE__*/ React.createElement(
-                  "h5",
-                  {
-                    class: "text-center",
-                  },
-                  "Personal Information"
-                ),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "row justify-content-center mx-5 py-2 px-5",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-8",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "div",
-                      {
-                        class: "row justify-content-start",
-                      },
-                      /*#__PURE__*/ React.createElement(
-                        "div",
-                        {
-                          class: "col",
-                        },
-                        /*#__PURE__*/ React.createElement(
-                          "label",
-                          null,
-                          "First name"
-                        ),
-                        /*#__PURE__*/ React.createElement("input", {
-                          type: "text",
-                          class: "form-control form-control-md",
-                          name: "first_name",
-                          id: "first_name",
-                          placeholder: "e.g. Po-Chen",
-                          value: "",
-                          required: true,
-                        })
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "div",
-                        {
-                          class: "col",
-                        },
-                        /*#__PURE__*/ React.createElement(
-                          "label",
-                          null,
-                          "Last name"
-                        ),
-                        /*#__PURE__*/ React.createElement("input", {
-                          type: "text",
-                          class: "form-control form-control-md",
-                          id: "last_name",
-                          name: "last_name",
-                          placeholder: "e.g. Yeh",
-                          value: "",
-                          required: true,
-                        })
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "div",
-                        {
-                          class: "small text-muted mt-2 text-center",
-                        },
-                        "Please make sure the name you fill in match the name on your passport"
-                      )
-                    )
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-4",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Preferred Name"
-                    ),
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "text",
-                      class: "form-control form-control-md",
-                      id: "preferred_name",
-                      name: "prefer_name",
-                      placeholder: "e.g. Brandon Yeh",
-                      value: "",
-                      required: true,
-                    }),
-                    /*#__PURE__*/ React.createElement(
-                      "p",
-                      {
-                        class: "small text-muted mt-2 text-center",
-                      },
-                      "Your preferred name will be printed on your name tag"
-                    )
-                  )
-                ),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "row justify-content-center mx-5 pb-5 px-5",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-4",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Date of Birth"
-                    ),
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "date",
-                      class: "form-control form-control-md",
-                      id: "date_of_birth",
-                      name: "date_of_birth",
-                      value: "",
-                      required: true,
-                    })
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-4",
-                    },
-                    /*#__PURE__*/ React.createElement("label", null, "Sex"),
-                    /*#__PURE__*/ React.createElement(
-                      "select",
-                      {
-                        class: "form-select",
-                        "aria-label": "Default select example",
-                        id: "sex",
-                        name: "sex",
-                        value: "",
-                        required: true,
-                      },
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Male",
-                        },
-                        "Male"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Female",
-                        },
-                        "Female"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Others",
-                        },
-                        "Others"
-                      )
-                    )
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-4",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Preferred Gender Pronoun"
-                    ),
-                    /*#__PURE__*/ React.createElement(
-                      "select",
-                      {
-                        class: "form-select",
-                        "aria-label": "Default select example",
-                        id: "prefer_gender",
-                        name: "prefer_gender",
-                        value: "",
-                        required: true,
-                      },
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "He/Him",
-                        },
-                        "He/Him"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "She/Her",
-                        },
-                        "She/Her"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "They/Them",
-                        },
-                        "They/Them"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Others",
-                        },
-                        "Others"
-                      )
-                    )
-                  )
-                ),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "row justify-content-center py-2 mx-5 px-5",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-6",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Nationality"
-                    ),
-                    /*#__PURE__*/ React.createElement("div", {
-                      "w3-include-html": "nationality.html",
-                    })
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-6",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "2nd Nationality"
-                    ),
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "text",
-                      class: "form-control form-control-md",
-                      id: "nationality2",
-                      placeholder: "Optional",
-                      name: "nationality_2",
-                      value: "",
-                    })
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "p",
-                    {
-                      class: "small text-muted mt-2 text-center",
-                    },
-                    "Please disclose if you have dual citizenship"
-                  )
-                ),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "row justify-content-center mx-5 py-3 px-5",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-4",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Education Institute"
-                    ),
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "text",
-                      class: "form-control form-control-md",
-                      id: "school",
-                      name: "education_institution",
-                      value: "",
-                      required: true,
-                    })
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-4",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Education Level"
-                    ),
-                    /*#__PURE__*/ React.createElement(
-                      "select",
-                      {
-                        class: "form-select",
-                        "aria-label": "Education level",
-                        id: "education_level",
-                        name: "education_level",
-                        value: "",
-                        required: true,
-                      },
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "High School",
-                        },
-                        "High School"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Freshman",
-                        },
-                        "Freshman"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Sophomore",
-                        },
-                        "Sophomore"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Junior",
-                        },
-                        "Junior"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Senior",
-                        },
-                        "Senior"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Fifth (or more) year of College",
-                        },
-                        "Fifth (or more) year of College"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Graduate",
-                        },
-                        "Graduate"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "PhD",
-                        },
-                        "PhD"
-                      )
-                    )
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-4",
-                    },
-                    /*#__PURE__*/ React.createElement("label", null, "Major"),
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "text",
-                      class: "form-control form-control-md",
-                      id: "major",
-                      name: "major",
-                      value: "",
-                      required: true,
-                    })
-                  )
-                ),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "row d-flex justify-content-center px-5 py-4",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-6 px-5",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "div",
-                      {
-                        class: "row align-items-center",
-                      },
-                      /*#__PURE__*/ React.createElement(
-                        "label",
-                        null,
-                        "Dietary Requirements"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "select",
-                        {
-                          class: "form-select",
-                          "aria-label": "Default select example",
-                          id: "dietary_requirements",
-                          name: "dietary_requirement",
-                          value: "",
-                          required: true,
-                        },
-                        /*#__PURE__*/ React.createElement(
-                          "option",
-                          {
-                            value: "Non-vegetarian",
-                          },
-                          "Non-vegetarian"
-                        ),
-                        /*#__PURE__*/ React.createElement(
-                          "option",
-                          {
-                            value: "Vegetarian",
-                          },
-                          "Vegetarian"
-                        ),
-                        /*#__PURE__*/ React.createElement(
-                          "option",
-                          {
-                            value: "Ovo-Lacto Vegetarian",
-                          },
-                          "Ovo-Lacto Vegetarian"
-                        ),
-                        /*#__PURE__*/ React.createElement(
-                          "option",
-                          {
-                            value: "Vegan",
-                          },
-                          "Vegan"
-                        ),
-                        /*#__PURE__*/ React.createElement(
-                          "option",
-                          {
-                            value: "Pork-free",
-                          },
-                          "Pork-free"
-                        ),
-                        /*#__PURE__*/ React.createElement(
-                          "option",
-                          {
-                            value: "Beef-free",
-                          },
-                          "Beef-free"
-                        )
-                      )
-                    )
-                  )
-                ),
-                /*#__PURE__*/ React.createElement("hr", {
-                  class: "mx-n3",
-                }),
-                /*#__PURE__*/ React.createElement(
-                  "h5",
-                  {
-                    class: "text-center",
-                  },
-                  "Contact Information"
-                ),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "row justify-content-center py-2 mx-5 px-5",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-6",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Email Address"
-                    ),
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "email",
-                      class: "form-control form-control-md",
-                      id: "email",
-                      name: "email",
-                      value: "",
-                      required: true,
-                    })
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-6",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Phone Number (with Country Code)"
-                    ),
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "tel",
-                      class: "form-control form-control-md",
-                      id: "phone_num",
-                      name: "phone_number",
-                      placeholder: "e.g. (+886)#########",
-                      value: "",
-                      required: true,
-                    })
-                  )
-                ),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "row justify-content-center py-2 mx-5 px-5",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-6",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Mailing Address"
-                    ),
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "text",
-                      class: "form-control form-control-md",
-                      id: "mailing_address",
-                      placeholder:
-                        "e.g. No. 1, Sec. 4, Roosevelt Rd., Taipei 10617, Taiwan (R.O.C.).",
-                      name: "mail_address",
-                      value: "",
-                      required: true,
-                    })
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-6",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Personal Facebook Profile Link"
-                    ),
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "url",
-                      class: "form-control form-control-md",
-                      id: "fb_link",
-                      name: "facebook_link",
-                      value: "",
-                      required: true,
-                    })
-                  )
-                ),
-                /*#__PURE__*/ React.createElement("hr", {
-                  class: "mx-n3",
-                }),
-                /*#__PURE__*/ React.createElement(
-                  "h5",
-                  {
-                    class: "text-center",
-                  },
-                  "Emergency Contact"
-                ),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "row justify-content-center py-2 mx-5 px-5",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-4 col-sm-3",
-                    },
-                    /*#__PURE__*/ React.createElement("label", null, "Name"),
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "text",
-                      class: "form-control form-control-md",
-                      id: "ec_name",
-                      name: "emergency_contact_name",
-                      value: "",
-                      required: true,
-                    })
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-4 col-sm-3",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Phone Number"
-                    ),
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "tel",
-                      class: "form-control form-control-md",
-                      id: "ec_phoneNum",
-                      name: "emergency_phone_number",
-                      value: "",
-                      required: true,
-                    })
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-4 col-sm-3",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Relationship"
-                    ),
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "text",
-                      class: "form-control form-control-md",
-                      id: "ec_relationship",
-                      name: "emergency_relation",
-                      value: "",
-                      required: true,
-                    })
-                  )
-                ),
-                /*#__PURE__*/ React.createElement("hr", {
-                  class: "mx-n3",
-                }),
-                /*#__PURE__*/ React.createElement(
-                  "h5",
-                  {
-                    class: "text-center",
-                  },
-                  "Accommodation"
-                ),
-                /*#__PURE__*/ React.createElement(
-                  "p",
-                  {
-                    class: "text-center",
-                  },
-                  "GIS Taiwan 2023 is planning on providing accommodation for confirmed delegates. ",
-                  /*#__PURE__*/ React.createElement("br", null),
-                  " Further information will be provided after the applicants has been confirmed."
-                ),
-                /*#__PURE__*/ React.createElement("hr", {
-                  class: "mx-n3",
-                }),
-                /*#__PURE__*/ React.createElement(
-                  "h5",
-                  {
-                    class: "text-center",
-                  },
-                  "Academic Topic/Impact Project Choice"
-                ),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "row justify-content-between py-2 mx-5 px-5",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-6 px-5",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "First Choice"
-                    ),
-                    /*#__PURE__*/ React.createElement(
-                      "select",
-                      {
-                        class: "form-select",
-                        "aria-label": "Academic Choice",
-                        id: "choice_1",
-                        name: "first_choice",
-                        value: "",
-                        required: true,
-                      },
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Currency Remodeling",
-                        },
-                        "Currency Remodeling"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "New Paradigm of Healthcare",
-                        },
-                        "New Paradigm of Healthcare"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Metaverse",
-                        },
-                        "Metaverse"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Energy Reform",
-                        },
-                        "Energy Reform"
-                      )
-                    )
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-6 px-5",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Second Choice"
-                    ),
-                    /*#__PURE__*/ React.createElement(
-                      "select",
-                      {
-                        class: "form-select",
-                        "aria-label": "Academic Choice",
-                        id: "choice_2",
-                        name: "second_choice",
-                        value: "",
-                        required: true,
-                      },
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Currency Remodeling",
-                        },
-                        "Currency Remodeling"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "New Paradigm of Healthcare",
-                        },
-                        "New Paradigm of Healthcare"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Metaverse",
-                        },
-                        "Metaverse"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Energy Reform",
-                        },
-                        "Energy Reform"
-                      )
-                    )
-                  )
-                ),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "row justify-content-between py-2 mx-5 px-5",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-6 px-5",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Third Choice"
-                    ),
-                    /*#__PURE__*/ React.createElement(
-                      "select",
-                      {
-                        class: "form-select",
-                        "aria-label": "Academic Choice",
-                        id: "choice_3",
-                        name: "third_choice",
-                        value: "",
-                        required: true,
-                      },
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Currency Remodeling",
-                        },
-                        "Currency Remodeling"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "New Paradigm of Healthcare",
-                        },
-                        "New Paradigm of Healthcare"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Metaverse",
-                        },
-                        "Metaverse"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Energy Reform",
-                        },
-                        "Energy Reform"
-                      )
-                    )
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-6 px-5",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Fourth Choice"
-                    ),
-                    /*#__PURE__*/ React.createElement(
-                      "select",
-                      {
-                        class: "form-select",
-                        "aria-label": "Academic Choice",
-                        id: "choice_4",
-                        name: "fourth_choice",
-                        value: "",
-                        required: true,
-                      },
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Currency Remodeling",
-                        },
-                        "Currency Remodeling"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "New Paradigm of Healthcare",
-                        },
-                        "New Paradigm of Healthcare"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Metaverse",
-                        },
-                        "Metaverse"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Energy Reform",
-                        },
-                        "Energy Reform"
-                      )
-                    )
-                  )
-                ),
-                /*#__PURE__*/ React.createElement("hr", {
-                  class: "mx-n3",
-                }),
-                /*#__PURE__*/ React.createElement(
-                  "h5",
-                  {
-                    class: "text-center",
-                  },
-                  "Panel Discussion"
-                ),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "row justify-content-center py-2 mx-5 px-5",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "p",
-                    {
-                      class: "text-left",
-                    },
-                    "In Panel discussion, we will invite keynote speakers along with an moderator to discuss on the academic topic from different perspectives. ",
-                    /*#__PURE__*/ React.createElement("br", null),
-                    "This year, we would like to invite one volunteer student panelist to join this session.He/She would have the opportunity to directly converse with the other three panelists and share his/her views on the topic. ",
-                    /*#__PURE__*/ React.createElement("br", null),
-                    "If you are interested in the position, please check the box below. We will have further interview assessment provided after your essay assessment has been approved."
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "row justify-content-center px-3 mx-5",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "div",
-                      {
-                        class: "col-lg-5 col-md-4 col-10",
-                      },
-                      /*#__PURE__*/ React.createElement("img", {
-                        src: "img/pd.jpg",
-                        class: "img-fluid",
-                        alt: "",
-                      })
-                    )
-                  )
-                ),
-                /*#__PURE__*/ React.createElement("br", null),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "text-center",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "label",
-                    null,
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "checkbox",
-                      id: "panel_discussion",
-                      name: "panel_discussion",
-                    }),
-                    "I would like to particpate in the panel discussion as a student representative"
-                  )
-                ),
-                /*#__PURE__*/ React.createElement("hr", {
-                  class: "mx-n3",
-                }),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "text-center",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "h5",
-                    {
-                      class: "text-center",
-                    },
-                    "Essay Assignment"
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "row d-flex justify-content-center px-5",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "a",
-                      {
-                        href: "https://docs.google.com/document/d/19aSNlrdMgv_UyHP6TMTGNnYhFbcBYHnf-TWpkRcteh8/edit?usp=sharing",
-                        target: "_blank",
-                      },
-                      "Essay Questions"
-                    ),
-                    /*#__PURE__*/ React.createElement("br", null),
-                    /*#__PURE__*/ React.createElement("br", null),
-                    /*#__PURE__*/ React.createElement(
-                      "div",
-                      {
-                        class: "col-6 px-3",
-                      },
-                      /*#__PURE__*/ React.createElement(
-                        "div",
-                        {
-                          class: "row align-items-center",
-                        },
-                        /*#__PURE__*/ React.createElement("input", {
-                          class: "mx-10 form-control form-control-md",
-                          id: "essay_file",
-                          name: "essay_assignment",
-                          type: "file",
-                          accept: "application/pdf",
-                          required: true,
-                        }),
-                        /*#__PURE__*/ React.createElement(
-                          "div",
-                          {
-                            class: "small text-muted mt-2",
-                          },
-                          "Upload your essay assignment. Max file size 5 MB"
-                        )
-                      )
-                    )
-                  )
-                )
-              ),
-              /*#__PURE__*/ React.createElement(
-                "div",
-                {
-                  class: "card-body tab",
-                },
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "text-center",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "h5",
-                    null,
-                    "Terms & Conditions"
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "a",
-                    {
-                      href: "https://docs.google.com/document/d/17o85FQiWOJ4aeLvuTPNMXWcQRQSxdI7al2z3TVOZgq8/edit#",
-                      target: "_blank",
-                    },
-                    "Terms & Conditions"
-                  ),
-                  /*#__PURE__*/ React.createElement("br", null),
-                  /*#__PURE__*/ React.createElement("br", null),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "checkbox",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      /*#__PURE__*/ React.createElement("input", {
-                        type: "checkbox",
-                        id: "termsAndConditions",
-                        name: "term_condition",
-                        required: true,
-                      }),
-                      "I agree to the GIS 2023 Terms and Conditions"
-                    )
-                  )
-                ),
-                /*#__PURE__*/ React.createElement("hr", {
-                  class: "mx-n3",
-                }),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "text-center",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "h5",
-                    {
-                      class: "text-center",
-                    },
-                    "Pandemic Refund Related Information"
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "a",
-                    null,
-                    "Pandemic Refund Related Information"
-                  )
-                ),
-                /*#__PURE__*/ React.createElement("hr", {
-                  class: "mx-n3",
-                }),
-                /*#__PURE__*/ React.createElement(
-                  "h5",
-                  {
-                    class: "text-center",
-                  },
-                  "Personal Information"
-                ),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "row justify-content-center mx-5 py-2 px-5",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-8",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "div",
-                      {
-                        class: "row justify-content-start",
-                      },
-                      /*#__PURE__*/ React.createElement(
-                        "div",
-                        {
-                          class: "col",
-                        },
-                        /*#__PURE__*/ React.createElement(
-                          "label",
-                          null,
-                          "First name"
-                        ),
-                        /*#__PURE__*/ React.createElement("input", {
-                          type: "text",
-                          class: "form-control form-control-md",
-                          name: "first_name",
-                          id: "first_name",
-                          placeholder: "e.g. Po-Chen",
-                          value: "",
-                          required: true,
-                        })
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "div",
-                        {
-                          class: "col",
-                        },
-                        /*#__PURE__*/ React.createElement(
-                          "label",
-                          null,
-                          "Last name"
-                        ),
-                        /*#__PURE__*/ React.createElement("input", {
-                          type: "text",
-                          class: "form-control form-control-md",
-                          id: "last_name",
-                          name: "last_name",
-                          placeholder: "e.g. Yeh",
-                          value: "",
-                          required: true,
-                        })
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "div",
-                        {
-                          class: "small text-muted mt-2 text-center",
-                        },
-                        "Please make sure the name you fill in match the name on your passport"
-                      )
-                    )
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-4",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Preferred Name"
-                    ),
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "text",
-                      class: "form-control form-control-md",
-                      id: "preferred_name",
-                      name: "prefer_name",
-                      placeholder: "e.g. Brandon Yeh",
-                      value: "",
-                      required: true,
-                    }),
-                    /*#__PURE__*/ React.createElement(
-                      "p",
-                      {
-                        class: "small text-muted mt-2 text-center",
-                      },
-                      "Your preferred name will be printed on your name tag"
-                    )
-                  )
-                ),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "row justify-content-center mx-5 pb-5 px-5",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-4",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Date of Birth"
-                    ),
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "date",
-                      class: "form-control form-control-md",
-                      id: "date_of_birth",
-                      name: "date_of_birth",
-                      value: "",
-                      required: true,
-                    })
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-4",
-                    },
-                    /*#__PURE__*/ React.createElement("label", null, "Sex"),
-                    /*#__PURE__*/ React.createElement(
-                      "select",
-                      {
-                        class: "form-select",
-                        "aria-label": "Default select example",
-                        id: "sex",
-                        name: "sex",
-                        value: "",
-                        required: true,
-                      },
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Male",
-                        },
-                        "Male"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Female",
-                        },
-                        "Female"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Others",
-                        },
-                        "Others"
-                      )
-                    )
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-4",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Preferred Gender Pronoun"
-                    ),
-                    /*#__PURE__*/ React.createElement(
-                      "select",
-                      {
-                        class: "form-select",
-                        "aria-label": "Default select example",
-                        id: "prefer_gender",
-                        name: "prefer_gender",
-                        value: "",
-                        required: true,
-                      },
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "He/Him",
-                        },
-                        "He/Him"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "She/Her",
-                        },
-                        "She/Her"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "They/Them",
-                        },
-                        "They/Them"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Others",
-                        },
-                        "Others"
-                      )
-                    )
-                  )
-                ),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "row justify-content-center py-2 mx-5 px-5",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-6",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Nationality"
-                    ),
-                    /*#__PURE__*/ React.createElement("div", {
-                      "w3-include-html": "nationality.html",
-                    })
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-6",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "2nd Nationality"
-                    ),
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "text",
-                      class: "form-control form-control-md",
-                      id: "nationality2",
-                      placeholder: "Optional",
-                      name: "nationality_2",
-                      value: "",
-                    })
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "p",
-                    {
-                      class: "small text-muted mt-2 text-center",
-                    },
-                    "Please disclose if you have dual citizenship"
-                  )
-                ),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "row justify-content-center mx-5 py-3 px-5",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-4",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Education Institute"
-                    ),
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "text",
-                      class: "form-control form-control-md",
-                      id: "school",
-                      name: "education_institution",
-                      value: "",
-                      required: true,
-                    })
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-4",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Education Level"
-                    ),
-                    /*#__PURE__*/ React.createElement(
-                      "select",
-                      {
-                        class: "form-select",
-                        "aria-label": "Education level",
-                        id: "education_level",
-                        name: "education_level",
-                        value: "",
-                        required: true,
-                      },
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "High School",
-                        },
-                        "High School"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Freshman",
-                        },
-                        "Freshman"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Sophomore",
-                        },
-                        "Sophomore"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Junior",
-                        },
-                        "Junior"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Senior",
-                        },
-                        "Senior"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Fifth (or more) year of College",
-                        },
-                        "Fifth (or more) year of College"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Graduate",
-                        },
-                        "Graduate"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "PhD",
-                        },
-                        "PhD"
-                      )
-                    )
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-4",
-                    },
-                    /*#__PURE__*/ React.createElement("label", null, "Major"),
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "text",
-                      class: "form-control form-control-md",
-                      id: "major",
-                      name: "major",
-                      value: "",
-                      required: true,
-                    })
-                  )
-                ),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "row d-flex justify-content-center px-5 py-4",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-6 px-5",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "div",
-                      {
-                        class: "row align-items-center",
-                      },
-                      /*#__PURE__*/ React.createElement(
-                        "label",
-                        null,
-                        "Dietary Requirements"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "select",
-                        {
-                          class: "form-select",
-                          "aria-label": "Default select example",
-                          id: "dietary_requirements",
-                          name: "dietary_requirement",
-                          value: "",
-                          required: true,
-                        },
-                        /*#__PURE__*/ React.createElement(
-                          "option",
-                          {
-                            value: "Non-vegetarian",
-                          },
-                          "Non-vegetarian"
-                        ),
-                        /*#__PURE__*/ React.createElement(
-                          "option",
-                          {
-                            value: "Vegetarian",
-                          },
-                          "Vegetarian"
-                        ),
-                        /*#__PURE__*/ React.createElement(
-                          "option",
-                          {
-                            value: "Ovo-Lacto Vegetarian",
-                          },
-                          "Ovo-Lacto Vegetarian"
-                        ),
-                        /*#__PURE__*/ React.createElement(
-                          "option",
-                          {
-                            value: "Vegan",
-                          },
-                          "Vegan"
-                        ),
-                        /*#__PURE__*/ React.createElement(
-                          "option",
-                          {
-                            value: "Pork-free",
-                          },
-                          "Pork-free"
-                        ),
-                        /*#__PURE__*/ React.createElement(
-                          "option",
-                          {
-                            value: "Beef-free",
-                          },
-                          "Beef-free"
-                        )
-                      )
-                    )
-                  )
-                ),
-                /*#__PURE__*/ React.createElement("hr", {
-                  class: "mx-n3",
-                }),
-                /*#__PURE__*/ React.createElement(
-                  "h5",
-                  {
-                    class: "text-center",
-                  },
-                  "Contact Information"
-                ),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "row justify-content-center py-2 mx-5 px-5",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-6",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Email Address"
-                    ),
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "email",
-                      class: "form-control form-control-md",
-                      id: "email",
-                      name: "email",
-                      value: "",
-                      required: true,
-                    })
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-6",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Phone Number (with Country Code)"
-                    ),
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "tel",
-                      class: "form-control form-control-md",
-                      id: "phone_num",
-                      name: "phone_number",
-                      placeholder: "e.g. (+886)#########",
-                      value: "",
-                      required: true,
-                    })
-                  )
-                ),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "row justify-content-center py-2 mx-5 px-5",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-6",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Mailing Address"
-                    ),
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "text",
-                      class: "form-control form-control-md",
-                      id: "mailing_address",
-                      placeholder:
-                        "e.g. No. 1, Sec. 4, Roosevelt Rd., Taipei 10617, Taiwan (R.O.C.).",
-                      name: "mail_address",
-                      value: "",
-                      required: true,
-                    })
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-6",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Personal Facebook Profile Link"
-                    ),
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "url",
-                      class: "form-control form-control-md",
-                      id: "fb_link",
-                      name: "facebook_link",
-                      value: "",
-                      required: true,
-                    })
-                  )
-                ),
-                /*#__PURE__*/ React.createElement("hr", {
-                  class: "mx-n3",
-                }),
-                /*#__PURE__*/ React.createElement(
-                  "h5",
-                  {
-                    class: "text-center",
-                  },
-                  "Emergency Contact"
-                ),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "row justify-content-center py-2 mx-5 px-5",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-4 col-sm-3",
-                    },
-                    /*#__PURE__*/ React.createElement("label", null, "Name"),
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "text",
-                      class: "form-control form-control-md",
-                      id: "ec_name",
-                      name: "emergency_contact_name",
-                      value: "",
-                      required: true,
-                    })
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-4 col-sm-3",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Phone Number"
-                    ),
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "tel",
-                      class: "form-control form-control-md",
-                      id: "ec_phoneNum",
-                      name: "emergency_phone_number",
-                      value: "",
-                      required: true,
-                    })
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-4 col-sm-3",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Relationship"
-                    ),
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "text",
-                      class: "form-control form-control-md",
-                      id: "ec_relationship",
-                      name: "emergency_relation",
-                      value: "",
-                      required: true,
-                    })
-                  )
-                ),
-                /*#__PURE__*/ React.createElement("hr", {
-                  class: "mx-n3",
-                }),
-                /*#__PURE__*/ React.createElement(
-                  "h5",
-                  {
-                    class: "text-center",
-                  },
-                  "Accommodation"
-                ),
-                /*#__PURE__*/ React.createElement(
-                  "p",
-                  {
-                    class: "text-center",
-                  },
-                  "GIS Taiwan 2023 is planning on providing accommodation for confirmed delegates. ",
-                  /*#__PURE__*/ React.createElement("br", null),
-                  " Further information will be provided after the applicants has been confirmed."
-                ),
-                /*#__PURE__*/ React.createElement("hr", {
-                  class: "mx-n3",
-                }),
-                /*#__PURE__*/ React.createElement(
-                  "h5",
-                  {
-                    class: "text-center",
-                  },
-                  "Academic Topic/Impact Project Choice"
-                ),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "row justify-content-between py-2 mx-5 px-5",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-6 px-5",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "First Choice"
-                    ),
-                    /*#__PURE__*/ React.createElement(
-                      "select",
-                      {
-                        class: "form-select",
-                        "aria-label": "Academic Choice",
-                        id: "choice_1",
-                        name: "first_choice",
-                        value: "",
-                        required: true,
-                      },
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Currency Remodeling",
-                        },
-                        "Currency Remodeling"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "New Paradigm of Healthcare",
-                        },
-                        "New Paradigm of Healthcare"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Metaverse",
-                        },
-                        "Metaverse"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Energy Reform",
-                        },
-                        "Energy Reform"
-                      )
-                    )
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-6 px-5",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Second Choice"
-                    ),
-                    /*#__PURE__*/ React.createElement(
-                      "select",
-                      {
-                        class: "form-select",
-                        "aria-label": "Academic Choice",
-                        id: "choice_2",
-                        name: "second_choice",
-                        value: "",
-                        required: true,
-                      },
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Currency Remodeling",
-                        },
-                        "Currency Remodeling"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "New Paradigm of Healthcare",
-                        },
-                        "New Paradigm of Healthcare"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Metaverse",
-                        },
-                        "Metaverse"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Energy Reform",
-                        },
-                        "Energy Reform"
-                      )
-                    )
-                  )
-                ),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "row justify-content-between py-2 mx-5 px-5",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-6 px-5",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Third Choice"
-                    ),
-                    /*#__PURE__*/ React.createElement(
-                      "select",
-                      {
-                        class: "form-select",
-                        "aria-label": "Academic Choice",
-                        id: "choice_3",
-                        name: "third_choice",
-                        value: "",
-                        required: true,
-                      },
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Currency Remodeling",
-                        },
-                        "Currency Remodeling"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "New Paradigm of Healthcare",
-                        },
-                        "New Paradigm of Healthcare"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Metaverse",
-                        },
-                        "Metaverse"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Energy Reform",
-                        },
-                        "Energy Reform"
-                      )
-                    )
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "col-6 px-5",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      "Fourth Choice"
-                    ),
-                    /*#__PURE__*/ React.createElement(
-                      "select",
-                      {
-                        class: "form-select",
-                        "aria-label": "Academic Choice",
-                        id: "choice_4",
-                        name: "fourth_choice",
-                        value: "",
-                        required: true,
-                      },
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Currency Remodeling",
-                        },
-                        "Currency Remodeling"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "New Paradigm of Healthcare",
-                        },
-                        "New Paradigm of Healthcare"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Metaverse",
-                        },
-                        "Metaverse"
-                      ),
-                      /*#__PURE__*/ React.createElement(
-                        "option",
-                        {
-                          value: "Energy Reform",
-                        },
-                        "Energy Reform"
-                      )
-                    )
-                  )
-                ),
-                /*#__PURE__*/ React.createElement("hr", {
-                  class: "mx-n3",
-                }),
-                /*#__PURE__*/ React.createElement(
-                  "h5",
-                  {
-                    class: "text-center",
-                  },
-                  "Panel Discussion"
-                ),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "row justify-content-center py-2 mx-5 px-5",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "p",
-                    {
-                      class: "text-left",
-                    },
-                    "In Panel discussion, we will invite keynote speakers along with an moderator to discuss on the academic topic from different perspectives. ",
-                    /*#__PURE__*/ React.createElement("br", null),
-                    "This year, we would like to invite one volunteer student panelist to join this session.He/She would have the opportunity to directly converse with the other three panelists and share his/her views on the topic. ",
-                    /*#__PURE__*/ React.createElement("br", null),
-                    "If you are interested in the position, please check the box below. We will have further interview assessment provided after your essay assessment has been approved."
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "row justify-content-center px-3 mx-5",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "div",
-                      {
-                        class: "col-lg-5 col-md-4 col-10",
-                      },
-                      /*#__PURE__*/ React.createElement("img", {
-                        src: "img/pd.jpg",
-                        class: "img-fluid",
-                        alt: "",
-                      })
-                    )
-                  )
-                ),
-                /*#__PURE__*/ React.createElement("br", null),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "text-center",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "label",
-                    null,
-                    /*#__PURE__*/ React.createElement("input", {
-                      type: "checkbox",
-                      id: "panel_discussion",
-                      name: "panel_discussion",
-                    }),
-                    "I would like to particpate in the panel discussion as a student representative"
-                  )
-                ),
-                /*#__PURE__*/ React.createElement("hr", {
-                  class: "mx-n3",
-                }),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "text-center",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "h5",
-                    {
-                      class: "text-center",
-                    },
-                    "Essay Assignment"
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "row d-flex justify-content-center px-5",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "a",
-                      {
-                        href: "https://docs.google.com/document/d/19aSNlrdMgv_UyHP6TMTGNnYhFbcBYHnf-TWpkRcteh8/edit?usp=sharing",
-                        target: "_blank",
-                      },
-                      "Essay Questions"
-                    ),
-                    /*#__PURE__*/ React.createElement("br", null),
-                    /*#__PURE__*/ React.createElement("br", null),
-                    /*#__PURE__*/ React.createElement(
-                      "div",
-                      {
-                        class: "col-6 px-3",
-                      },
-                      /*#__PURE__*/ React.createElement(
-                        "div",
-                        {
-                          class: "row align-items-center",
-                        },
-                        /*#__PURE__*/ React.createElement("input", {
-                          class: "mx-10 form-control form-control-md",
-                          id: "essay_file",
-                          name: "essay_assignment",
-                          type: "file",
-                          accept: "application/pdf",
-                          required: true,
-                        }),
-                        /*#__PURE__*/ React.createElement(
-                          "div",
-                          {
-                            class: "small text-muted mt-2",
-                          },
-                          "Upload your essay assignment. Max file size 5 MB"
-                        )
-                      )
-                    )
-                  )
-                )
-              ),
-              /*#__PURE__*/ React.createElement(
-                "div",
-                {
-                  class: "card-body tab",
-                },
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "text-center",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "h5",
-                    null,
-                    "Terms & Conditions"
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "a",
-                    {
-                      href: "https://docs.google.com/document/d/17o85FQiWOJ4aeLvuTPNMXWcQRQSxdI7al2z3TVOZgq8/edit#",
-                      target: "_blank",
-                    },
-                    "Terms & Conditions"
-                  ),
-                  /*#__PURE__*/ React.createElement("br", null),
-                  /*#__PURE__*/ React.createElement("br", null),
-                  /*#__PURE__*/ React.createElement(
-                    "div",
-                    {
-                      class: "checkbox",
-                    },
-                    /*#__PURE__*/ React.createElement(
-                      "label",
-                      null,
-                      /*#__PURE__*/ React.createElement("input", {
-                        type: "checkbox",
-                        id: "termsAndConditions",
-                        name: "term_condition",
-                        required: true,
-                      }),
-                      "I agree to the GIS 2023 Terms and Conditions"
-                    )
-                  )
-                ),
-                /*#__PURE__*/ React.createElement("hr", {
-                  class: "mx-n3",
-                }),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "text-center",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "h5",
-                    {
-                      class: "text-center",
-                    },
-                    "Pandemic Refund Related Information"
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "a",
-                    null,
-                    "Pandemic Refund Related Information"
                   )
                 ),
                 /*#__PURE__*/ React.createElement("hr", {
@@ -9473,7 +9291,43 @@ function formCreate() {
             {
               class: "container",
             },
-
+            /*#__PURE__*/ React.createElement(
+              "div",
+              {
+                class: "row justify-content-center py-2 mx-5 px-5",
+              },
+              /*#__PURE__*/ React.createElement(
+                "div",
+                {
+                  class: "col-4 col-sm-3",
+                }
+              ),
+              /*#__PURE__*/ React.createElement(
+                "div",
+                {
+                  class: "col-4 col-sm-3",
+                },
+                /*#__PURE__*/ React.createElement(
+                  "label",
+                  null,
+                  "Discount Code"
+                ),
+                /*#__PURE__*/ React.createElement("input", {
+                  type: "text",
+                  class: "form-control form-control-md",
+                  id: "code",
+                  name: "code",
+                  value: "",
+                })
+              ),
+              /*#__PURE__*/ React.createElement(
+                "div",
+                {
+                  class: "col-4 col-sm-3",
+                }
+              )
+            ),
+            /*#__PURE__*/ React.createElement("br", null),
             /*#__PURE__*/ React.createElement(
               "div",
               {
@@ -9521,27 +9375,6 @@ function formCreate() {
                       }),
                       "I agree to the GIS 2023 Terms and Conditions"
                     )
-                  )
-                ),
-                /*#__PURE__*/ React.createElement("hr", {
-                  class: "mx-n3",
-                }),
-                /*#__PURE__*/ React.createElement(
-                  "div",
-                  {
-                    class: "text-center",
-                  },
-                  /*#__PURE__*/ React.createElement(
-                    "h5",
-                    {
-                      class: "text-center",
-                    },
-                    "Pandemic Refund Related Information"
-                  ),
-                  /*#__PURE__*/ React.createElement(
-                    "a",
-                    null,
-                    "Pandemic Refund Related Information"
                   )
                 ),
                 /*#__PURE__*/ React.createElement("hr", {
