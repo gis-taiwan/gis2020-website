@@ -9294,7 +9294,7 @@ function formCreate() {
             /*#__PURE__*/ React.createElement(
               "div",
               {
-                class: "row justify-content-center py-2 mx-5 px-5",
+                class: "row justify-content-center text-center py-2 mx-5 px-5",
               },
               /*#__PURE__*/ React.createElement(
                 "div",
@@ -10393,12 +10393,15 @@ function formCreate() {
         var postData = new FormData(
           document.getElementById("post-delegate-form")
         );
+        if(postData.get("code") === ""){
+          postData.delete("code");
+        }
         // POST
         if (!document.forms["post-delegate-form"].checkValidity()) {
           return;
         }
         var request = new XMLHttpRequest();
-        request.open("Post", "https://be.admin.gis-taiwan.ntu.edu.tw/delegate");
+        request.open("Post", "https://be.admin.gis-taiwan.ntu.edu.tw/delegate/");
         request.onreadystatechange = function () {
           if (this.readyState === 4) {
             if (this.status === 201) {
