@@ -772,6 +772,7 @@ async function nextPrev(n) {
     for (let i = 0; i < tabs.length; i++) {
       let tab = tabs[i];
       const inputs = tab.getElementsByTagName("input");
+      const selects = tab.getElementsByTagName("select");
       let delegate = {};
       for (let j = 0; j < inputs.length; j++) {
         let input = inputs[j];
@@ -781,6 +782,11 @@ async function nextPrev(n) {
           const base64 = await convertBase64(file);
           delegate[input.name] = base64;
         } else delegate[input.name] = input.value;
+      }
+      for (let j = 0; j < selects.length; j++) {
+        let select = selects[j];
+        console.log(select.value);
+        delegate[select.name] = select.value;
       }
       jsonData.delegate.push(delegate);
     }
@@ -827,7 +833,6 @@ function validateForm() {
   // A loop that checks every input field in the current tab:
   for (i = 0; i < y.length; i++) {
     // If a field is empty...
-    console.log(y[i].type);
     if (
       y[i].hasAttribute("required") &&
       (y[i].value == "" || (y[i].type === "checkbox" && !y[i].checked))
@@ -10429,7 +10434,7 @@ function formCreate() {
         var postData = new FormData(
           document.getElementById("post-delegate-form")
         );
-        if(postData.get("code") === ""){
+        if (postData.get("code") === "") {
           postData.delete("code");
         }
         // POST
@@ -10437,7 +10442,10 @@ function formCreate() {
           return;
         }
         var request = new XMLHttpRequest();
-        request.open("Post", "https://be.admin.gis-taiwan.ntu.edu.tw/delegate/");
+        request.open(
+          "Post",
+          "https://be.admin.gis-taiwan.ntu.edu.tw/delegate/"
+        );
         request.onreadystatechange = function () {
           if (this.readyState === 4) {
             if (this.status === 201) {
