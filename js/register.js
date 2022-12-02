@@ -10468,3 +10468,5 @@ function formCreate() {
     }
   }
 }
+
+formCreate();
