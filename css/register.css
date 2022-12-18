@@ -1,46 +1,45 @@
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
 
 *,
 *:after,
 *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .clearfix:before,
 .clearfix:after {
-  content: " ";
-  display: table;
+	content: " ";
+	display: table;
 }
 
 .clearfix:after {
-  clear: both;
+	clear: both;
 }
 #registertab body {
-  font-family: sans-serif, "Apple LiGothic Medium", "Microsoft JhengHei";
-  background: #f6f9fa;
+	font-family: sans-serif,"Apple LiGothic Medium","Microsoft JhengHei";
+	background: #f6f9fa;
 }
 #registertab h1 {
-  color: #ccc;
-  text-align: center;
+	color: #ccc;
+	text-align: center;
 }
 #registertab a {
-  color: rgba(89, 182, 171, 1);
+  color: rgba(89,182,171,1);
   text-decoration: none;
   outline: none;
 }
 
 /*Fun begins*/
 .tab_container {
-  width: 90%;
-  margin: 0 auto;
-  padding-top: 70px;
-  position: relative;
+	width: 90%;
+	margin: 0 auto;
+	padding-top: 70px;
+	position: relative;
 }
 
-input,
-section {
+input, section {
   clear: both;
   padding-top: 10px;
   display: none;
@@ -70,19 +69,20 @@ input[type="radio"] + label {
 }
 .mylabel {
   background: #fff;
-  box-shadow: inset 0 3px rgba(89, 182, 171, 1); /*0CE;*/
+  box-shadow: inset 0 3px rgba(89,182,171,1);/*0CE;*/
 }
 
 .myfas {
-  color: rgba(89, 182, 171, 1) /*#0CE*/;
+  color: rgba(89,182,171,1)/*#0CE*/;
 }
 
 input[type="checkbox"] {
   display: inline-block;
 }
 
+
 a:hover {
-  color: rgba(89, 182, 171, 1);
+  color: rgba(89,182,171,1);
 }
 
 /* input[type="checkbox"] + label {
@@ -118,9 +118,10 @@ a:hover {
   -moz-animation: fadeInScale 0.7s ease-in-out;
   animation: fadeInScale 0.7s ease-in-out;
 }
-.tab_container .tab-content h3 {
+.tab_container .tab-content h3  {
   text-align: center;
 }
+
 
 /*
 .tab_container [id^="tab"]:checked + label {
@@ -148,7 +149,7 @@ input[type="radio"] + label .fas {
   input[type="radio"] + label span {
     display: none;
   }
-
+  
   .tab_container {
     width: 98%;
   }
@@ -157,22 +158,22 @@ input[type="radio"] + label .fas {
 /*Content Animation*/
 @keyframes fadeInScale {
   0% {
-    transform: scale(0.9);
-    opacity: 0;
+  	transform: scale(0.9);
+  	opacity: 0;
   }
-
+  
   100% {
-    transform: scale(1);
-    opacity: 1;
+  	transform: scale(1);
+  	opacity: 1;
   }
 }
 
 .no_wrap {
-  text-align: center;
+  text-align:center;
   color: #0ce;
 }
 .link {
-  text-align: center;
+  text-align:center;
 }
 
 /* registration guide */
@@ -195,16 +196,16 @@ input[type="radio"] + label .fas {
   vertical-align: bottom;
   padding: 0 0.5em;
   -webkit-transform: scale(0.8) translateY(30px);
-  transform: scale(0.8) translateY(30px);
+          transform: scale(0.8) translateY(30px);
   -webkit-transform-origin: bottom center;
-  transform-origin: bottom center;
+          transform-origin: bottom center;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 .process-items div.active {
   -webkit-transform: scale(1) translateY(0);
-  transform: scale(1) translateY(0);
+          transform: scale(1) translateY(0);
 }
 .process-items em {
   display: block;
@@ -217,93 +218,84 @@ input[type="radio"] + label .fas {
 
 /*mobile slick text slider*/
 .testimonial-area {
-  display: block;
-  background: rgba(0, 0, 0, 0);
-  width: 100%;
-  padding: 20px 0 0px;
-  position: relative;
+    display: block;
+    background: rgba(0, 0, 0, 0);
+    width:100%;
+    padding: 20px 0 0px;
+    position: relative;
 }
 
-.testimonial-image-slider {
-  margin-top: 5px;
-}
-.slick-list {
-  margin: 0 5px;
-}
+.testimonial-image-slider {margin-top: 5px}
+.slick-list {margin: 0 5px}
 
-.mcontent {
-  height: 100%;
+.mcontent{
+  height:100%;
   transform: scale(0.7);
 }
-.mcontent p {
+.mcontent p{
   font-weight: bold;
-}
-.mcontent.slick-current {
-  z-index: 1;
+  }
+.mcontent.slick-current{
+    z-index:1;
   transform: scale(1) translateY(0px);
-  -webkit-transition: all 0.5s; /* Safari */
-  transition: all 0.5s;
+  -webkit-transition: all .5s; /* Safari */
+  transition: all .5s;
 }
 
-.slick-prev,
-.slick-next {
-  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-  border: medium none;
-  color: blue;
-  cursor: pointer;
-  display: block;
-  font-size: 0;
-  height: 25px;
-  outline: medium none;
-  padding: 0;
-  position: absolute;
-  top: 0%;
-  width: 16px;
+.slick-prev, .slick-next {
+    background: rgba(0,0,0,0) none repeat scroll 0 0;
+    border: medium none;
+    color: blue;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    height: 25px;
+    outline: medium none;
+    padding: 0;
+    position: absolute;
+    top: 0%;
+    width: 16px;
 }
 .slick-prev {
-  left: 0px;
-  z-index: 1;
+    left: 0px;
+    z-index:1;
 }
 
-.slick-next {
-  right: 0px;
-}
-.slick-prev:before {
-  height: 25px;
-  width: 16px;
-  left: -30px;
-  top: 40px;
-  position: absolute;
-  color: #585858;
-  font-weight: bold;
-  content: "<";
-  font-family: "Material-Design-Iconic-Font", "Apple LiGothic Medium",
-    "Microsoft JhengHei";
-  font-size: 2.5rem !important;
-  opacity: 1;
+.slick-next {right: 0px}
+.slick-prev:before{
+    height: 25px;
+    width: 16px;
+    left: -30px;
+    top: 40px;
+    position: absolute;
+    color:#585858;
+    font-weight : bold;
+    content: "<";
+    font-family: "Material-Design-Iconic-Font","Apple LiGothic Medium","Microsoft JhengHei";
+    font-size: 2.5rem !important;
+    opacity: 1;
+    
 }
 .slick-next:before {
-  height: 25px;
-  width: 16px;
-  left: 15px;
-  top: 40px;
-  position: absolute;
-  color: #585858;
-  font-weight: bold;
-  content: ">";
-  font-family: "Material-Design-Iconic-Font", "Apple LiGothic Medium",
-    "Microsoft JhengHei";
-  font-size: 2.5rem !important;
-  opacity: 1;
+    height: 25px;
+    width: 16px;
+    left: 15px;
+    top: 40px;
+    position: absolute;
+    color:#585858;
+    font-weight : bold;
+    content: ">";
+    font-family: "Material-Design-Iconic-Font","Apple LiGothic Medium","Microsoft JhengHei";
+    font-size: 2.5rem !important;
+    opacity: 1;
+    
 }
 
 .slick-next:before {
-  opacity: 1;
-  right: 0;
+    opacity: 1;
+    right: 0; 
 }
-.slick-slider {
-  z-index: 9;
-}
+.slick-slider {z-index: 9;}
 
 @media (max-width: 980px) {
   .slider-row {
@@ -316,55 +308,28 @@ input[type="radio"] + label .fas {
     max-width: 1160px;
   }
 }
-a.btn.signup {
-  width: 30%;
-  min-width: 110px;
-  color: white !important;
+a.btn.signup{
+    width:30%;
+    min-width:110px;
+    color: white !important;
 }
-.formlink {
-  width: 100%;
-  height: 100%;
-  color: white !important;
-  /*min-width:190px;*/
+.formlink{
+    width:100%;
+    height:100%;
+    color: white !important;
+    /*min-width:190px;*/
+
 }
-#content5 img {
-  width: 100%;
+#content5 img{
+    width: 100%
 }
-.spot > p {
-  margin-top: 30px;
-  font-weight: bold;
+.spot > p{
+    margin-top: 30px;
+    font-weight: bold;
+
 }
-#content5 h4 {
-  margin-top: 30px;
+#content5 h4{
+    margin-top:30px;
 }
 
-/* Make circles that indicate the steps of the form: */
-.step {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbbbbb;
-  border: none;
-  border-radius: 50%;
-  display: inline-block;
-  opacity: 0.5;
-}
-
-/* Mark the active step: */
-.step.active {
-  opacity: 1;
-}
-
-/* Mark the steps that are finished and valid: */
-.step.finish {
-  background-color: #04aa6d;
-}
-
-.tab {
-  display: none;
-}
-
-/* Mark input boxes that gets an error on validation: */
-input.invalid {
-  background-color: #ffdddd;
-}
+ 
